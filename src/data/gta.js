@@ -41,7 +41,7 @@ export const gtaData = {
       realWorldUse: "Cut into gemstones, industrial abrasives, scientific instruments",
       rarity: "Rare",
       imageUrl: "/images/gta/diamond-rough-1.jpg",
-      funFact: "It takes 1-3 billion years for diamonds to form 100+ miles underground, then volcanic eruptions bring them to the surface!"
+      funFact: "Diamonds are 1-3 billion years old, formed 100+ miles deep in Earth's mantle, then brought to the surface by explosive volcanic eruptions!"
     },
     {
       id: "diamond-rough-2",

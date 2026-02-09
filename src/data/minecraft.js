@@ -121,7 +121,7 @@ export const minecraftData = {
       realWorldUse: "Museum specimens, demonstrates geological context",
       rarity: "Rare",
       imageUrl: "/images/minecraft/emerald-mineral-1.jpg",
-      funFact: "Colombian emeralds, considered the finest in the world, formed 65 million years ago in sedimentary rock—very unusual for emeralds!"
+      funFact: "Most emeralds form in metamorphic rocks like mica schist. Colombian emeralds are exceptional—they formed in sedimentary rocks, making them geologically unique!"
     },
     {
       id: "emerald-mineral-2",

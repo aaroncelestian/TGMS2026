@@ -57,7 +57,7 @@ export const eliteDangerousData = {
       realWorldUse: "Collector specimens showing natural occurrence",
       rarity: "Rare",
       imageUrl: "/images/elitedangerous/benitoite-rock.jpg",
-      funFact: "The blue benitoite, white natrolite, and black neptunite together are sometimes called 'patriotic minerals' for their red, white, and blue colors!"
+      funFact: "The blue benitoite, white natrolite, and neptunite (which shows reddish colors under bright light) together are sometimes called 'patriotic minerals' for their red, white, and blue colors!"
     },
     {
       id: "rutile-synthetic",
