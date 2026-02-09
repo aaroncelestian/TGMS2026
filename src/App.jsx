@@ -26,7 +26,12 @@ function App() {
       <div className="game-nav">
         <button className="game-nav-toggle" onClick={() => setShowGameMenu(!showGameMenu)}>
           <span className="game-nav-icon">{gameList.find(g => g.id === currentGameId)?.icon || '🎮'}</span>
-          <span className="game-nav-title">{gameInfo.name}</span>
+          <div style={{ flex: 1, textAlign: 'left' }}>
+            <span className="game-nav-title">{gameInfo.name}</span>
+            <div style={{ fontSize: '0.75rem', color: 'var(--accent)', marginTop: '2px' }}>
+              Tap to switch games
+            </div>
+          </div>
           <span className="game-nav-arrow">{showGameMenu ? '▲' : '▼'}</span>
         </button>
       </div>

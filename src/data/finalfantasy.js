@@ -31,7 +31,7 @@ export const finalFantasyData = {
       id: "pink-beryl-mineral",
       name: "Pink Beryl (Crystal)",
       formula: "Be₃Al₂Si₆O₁₈",
-      specimenId: "52977",
+      specimenId: "6663",
       type: "mineral",
       crystalSystem: "Hexagonal",
       hardness: "7.5-8",
