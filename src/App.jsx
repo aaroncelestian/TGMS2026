@@ -7,12 +7,28 @@ import './styles/App.css';
 function App() {
   const [selectedMineral, setSelectedMineral] = useState(null);
   const [viewMode, setViewMode] = useState('gallery');
-  const [currentGameId, setCurrentGameId] = useState('minecraft'); // Default to Minecraft
   const [showGameMenu, setShowGameMenu] = useState(false);
+
+  // Get game from URL parameter or default to minecraft
+  const getInitialGame = () => {
+    const params = new URLSearchParams(window.location.search);
+    const gameParam = params.get('game');
+    return gameParam && allGames[gameParam] ? gameParam : 'minecraft';
+  };
+
+  const [currentGameId, setCurrentGameId] = useState(getInitialGame());
 
   // Get current game data
   const currentGame = allGames[currentGameId];
   const { gameInfo, minerals } = currentGame;
+
+  // Update URL when game changes
+  const changeGame = (gameId) => {
+    setCurrentGameId(gameId);
+    const url = new URL(window.location);
+    url.searchParams.set('game', gameId);
+    window.history.pushState({}, '', url);
+  };
 
   // Scroll to top when game changes
   useEffect(() => {
@@ -46,7 +62,7 @@ function App() {
                 <button
                   key={game.id}
                   className={`game-card ${currentGameId === game.id ? 'active' : ''}`}
-                  onClick={() => setCurrentGameId(game.id)}
+                  onClick={() => changeGame(game.id)}
                 >
                   <span className="game-card-icon">{game.icon}</span>
                   <span className="game-card-name">{game.name}</span>
