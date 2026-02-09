@@ -1,0 +1,95 @@
+// Diablo - Action RPG with gem-socketing mechanics
+export const diabloData = {
+  gameInfo: {
+    name: "Diablo",
+    tagline: "Dark fantasy action RPG where gems enhance weapons and armor",
+    developer: "Blizzard Entertainment",
+    releaseYear: 1996,
+    totalMinerals: 8,
+    totalSpecimens: 5,
+    diversityScore: "Medium",
+    gameDescription: "Diablo features 8 different gem types including Amethyst, Diamond, Emerald, Ruby, Sapphire, Topaz, Skull, and their various quality tiers. Gems are socketed into weapons and armor to provide stat bonuses, resistances, and special effects. The gem system is central to character customization and build optimization across the series."
+  },
+  minerals: [
+    {
+      id: "yellow-topaz-gem",
+      name: "Yellow Topaz",
+      formula: "Al₂SiO₄(F,OH)₂",
+      specimenId: "51749",
+      type: "gem",
+      crystalSystem: "Orthorhombic",
+      hardness: "8",
+      color: "Golden yellow to amber",
+      description: "Natural yellow topaz, one of the hardest gemstones. In Diablo, topaz gems are socketed into equipment to provide lightning resistance and magic find bonuses.",
+      inGameUse: "Socketable gem for lightning resistance, magic find enhancement",
+      realWorldUse: "Gemstone jewelry, November birthstone",
+      rarity: "Uncommon",
+      imageUrl: "/images/diablo/yellow-topaz-gem.jpg",
+      funFact: "Imperial topaz (golden yellow to pink) is the most valuable topaz variety and was named after the Russian royal family who claimed exclusive rights to it!"
+    },
+    {
+      id: "yellow-topaz-mineral",
+      name: "Yellow Topaz Crystal",
+      formula: "Al₂SiO₄(F,OH)₂",
+      specimenId: "25424",
+      type: "mineral",
+      crystalSystem: "Orthorhombic",
+      hardness: "8",
+      color: "Yellow prismatic crystal",
+      description: "Natural topaz crystal showing the characteristic orthorhombic form. Topaz forms in igneous rocks and pegmatites, often as large, well-formed crystals.",
+      inGameUse: "Raw topaz gem, crafting material",
+      realWorldUse: "Mineral specimens, source for cut gems",
+      rarity: "Uncommon",
+      imageUrl: "/images/diablo/yellow-topaz-mineral.jpg",
+      funFact: "The largest cut topaz in the world is the Brazilian Princess, weighing 21,327 carats (about 9.4 pounds)!"
+    },
+    {
+      id: "sapphire-gem",
+      name: "Sapphire",
+      formula: "Al₂O₃",
+      specimenId: "37438",
+      type: "gem",
+      crystalSystem: "Trigonal (Hexagonal)",
+      hardness: "9",
+      color: "Deep blue",
+      description: "Blue variety of corundum, second only to diamond in hardness. In Diablo, sapphires provide cold resistance and are essential for high-level crafting.",
+      inGameUse: "Socketable gem for cold resistance, mana boost",
+      realWorldUse: "Precious gemstone, watch crystals, scientific instruments",
+      rarity: "Rare",
+      imageUrl: "/images/diablo/sapphire-gem.jpg",
+      funFact: "The Star of India, one of the world's largest star sapphires at 563 carats, was stolen from the American Museum of Natural History in 1964 and later recovered!"
+    },
+    {
+      id: "sapphire-mineral-1",
+      name: "Sapphire Crystal",
+      formula: "Al₂O₃",
+      specimenId: "76800",
+      type: "mineral",
+      crystalSystem: "Trigonal (Hexagonal)",
+      hardness: "9",
+      color: "Blue hexagonal crystal",
+      description: "Natural sapphire crystal showing the hexagonal barrel shape typical of corundum. The blue color comes from trace amounts of iron and titanium.",
+      inGameUse: "Raw sapphire, high-value loot",
+      realWorldUse: "Museum specimens, source for faceted gems",
+      rarity: "Rare",
+      imageUrl: "/images/diablo/sapphire-mineral-1.jpg",
+      funFact: "Sapphires come in every color except red—red corundum is called ruby! There are pink, yellow, green, and even colorless sapphires."
+    },
+    {
+      id: "sapphire-mineral-2",
+      name: "Sapphire in Matrix",
+      formula: "Al₂O₃",
+      specimenId: "24306",
+      type: "mineral",
+      crystalSystem: "Trigonal (Hexagonal)",
+      hardness: "9",
+      color: "Blue crystals in metamorphic rock",
+      description: "Sapphire crystals in their natural host rock, typically marble or metamorphic schist. Shows the geological context of sapphire formation.",
+      inGameUse: "Sapphire ore, mining discovery",
+      realWorldUse: "Geological specimens, demonstrates natural occurrence",
+      rarity: "Rare",
+      imageUrl: "/images/diablo/sapphire-mineral-2.jpg",
+      funFact: "Kashmir sapphires, considered the finest in the world, come from a remote region in the Himalayas and have a unique velvety blue color!"
+    }
+  ]
+};

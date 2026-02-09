@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Mineralogy in Video Games - TGMS 2026 Multi-Game Demo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #1a1a1a;
+            --bg-card: #252525;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --accent: #4a9eff;
+            --border: #333333;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        /* Game Navigation */
+        .game-nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .game-nav-toggle {
+            width: 100%;
+            background: var(--bg-card);
+            border: none;
+            padding: 1rem 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            cursor: pointer;
+        }
+
+        .game-nav-icon { font-size: 1.5rem; }
+        .game-nav-title {
+            flex: 1;
+            text-align: left;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        .game-nav-arrow { font-size: 0.75rem; color: var(--text-secondary); }
+
+        /* Game Menu */
+        .game-menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.85);
+            z-index: 200;
+            display: none;
+            align-items: flex-start;
+            padding-top: 60px;
+        }
+
+        .game-menu-overlay.active { display: flex; }
+
+        .game-menu {
+            background: var(--bg-secondary);
+            width: 100%;
+            max-height: calc(100vh - 60px);
+            border-radius: 24px 24px 0 0;
+            padding: 1.5rem;
+        }
+
+        .game-menu-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
+        }
+
+        .game-card {
+            background: var(--bg-card);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+        }
+
+        .game-card.active {
+            border-color: var(--accent);
+            background: rgba(74, 158, 255, 0.1);
+        }
+
+        .game-card-icon { font-size: 2rem; }
+        .game-card-name {
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-align: center;
+        }
+        .game-card-count {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+
+        /* Hero */
+        .hero {
+            height: 35vh;
+            min-height: 250px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-content { text-align: center; padding: 2rem 1.5rem; }
+        
+        .game-logo {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #4a9eff 0%, #7ec8ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .game-subtitle {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.5rem;
+            padding: 1rem;
+            background: var(--bg-secondary);
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1rem 0.75rem;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .info-text {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <!-- Game Navigation -->
+    <div class="game-nav">
+        <button class="game-nav-toggle" onclick="toggleGameMenu()">
+            <span class="game-nav-icon" id="currentGameIcon">⛏️</span>
+            <span class="game-nav-title" id="currentGameName">Minecraft</span>
+            <span class="game-nav-arrow">▼</span>
+        </button>
+    </div>
+
+    <!-- Game Menu Overlay -->
+    <div id="gameMenuOverlay" class="game-menu-overlay" onclick="closeGameMenu()">
+        <div class="game-menu" onclick="event.stopPropagation()">
+            <h3 class="game-menu-title">Select a Game</h3>
+            <div class="game-grid">
+                <button class="game-card active" onclick="selectGame('minecraft')">
+                    <span class="game-card-icon">⛏️</span>
+                    <span class="game-card-name">Minecraft</span>
+                    <span class="game-card-count">10 minerals</span>
+                </button>
+                <button class="game-card" onclick="selectGame('stardew')">
+                    <span class="game-card-icon">🌾</span>
+                    <span class="game-card-name">Stardew Valley</span>
+                    <span class="game-card-count">6 minerals</span>
+                </button>
+                <button class="game-card" onclick="selectGame('gta')">
+                    <span class="game-card-icon">💎</span>
+                    <span class="game-card-name">GTA</span>
+                    <span class="game-card-count">7 minerals</span>
+                </button>
+                <button class="game-card" onclick="selectGame('wow')">
+                    <span class="game-card-icon">⚔️</span>
+                    <span class="game-card-name">World of Warcraft</span>
+                    <span class="game-card-count">7 minerals</span>
+                </button>
+                <button class="game-card" onclick="selectGame('zelda')">
+                    <span class="game-card-icon">🗡️</span>
+                    <span class="game-card-name">Zelda</span>
+                    <span class="game-card-count">4 minerals</span>
+                </button>
+                <button class="game-card" onclick="selectGame('ff')">
+                    <span class="game-card-icon">✨</span>
+                    <span class="game-card-name">Final Fantasy</span>
+                    <span class="game-card-count">6 minerals</span>
+                </button>
+                <button class="game-card" onclick="selectGame('elite')">
+                    <span class="game-card-icon">🚀</span>
+                    <span class="game-card-name">Elite Dangerous</span>
+                    <span class="game-card-count">6 minerals</span>
+                </button>
+                <button class="game-card" onclick="selectGame('witcher')">
+                    <span class="game-card-icon">🐺</span>
+                    <span class="game-card-name">The Witcher</span>
+                    <span class="game-card-count">6 minerals</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Content (Minecraft) -->
+    <div id="minecraft-content">
+        <div class="hero">
+            <div class="hero-content">
+                <h1 class="game-logo">Minecraft</h1>
+                <p class="game-subtitle">The sandbox game that introduced millions to mining</p>
+            </div>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-card"><span class="stat-value">10</span><span class="stat-label">Minerals</span></div>
+            <div class="stat-card"><span class="stat-value">10</span><span class="stat-label">Specimens</span></div>
+            <div class="stat-card"><span class="stat-value">Med-High</span><span class="stat-label">Diversity</span></div>
+        </div>
+        <div class="info-box">
+            <p class="info-text">
+                <strong style="color: var(--text-primary)">Minecraft</strong> features calcite, lapis lazuli, emeralds, obsidian, and gold. 
+                Explore the geology behind the world's best-selling game!
+            </p>
+        </div>
+    </div>
+
+    <!-- Other Game Content (hidden by default) -->
+    <div id="stardew-content" class="hidden">
+        <div class="hero">
+            <div class="hero-content">
+                <h1 class="game-logo">Stardew Valley</h1>
+                <p class="game-subtitle">A farming RPG with museum minerals</p>
+            </div>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-card"><span class="stat-value">6</span><span class="stat-label">Minerals</span></div>
+            <div class="stat-card"><span class="stat-value">6</span><span class="stat-label">Specimens</span></div>
+            <div class="stat-card"><span class="stat-value">Medium</span><span class="stat-label">Diversity</span></div>
+        </div>
+        <div class="info-box">
+            <p class="info-text">
+                <strong style="color: var(--text-primary)">Stardew Valley</strong> includes malachite, neptunite, celestine, baryte, and kyanite. 
+                Donate them to Gunther's museum!
+            </p>
+        </div>
+    </div>
+
+    <div id="gta-content" class="hidden">
+        <div class="hero">
+            <div class="hero-content">
+                <h1 class="game-logo">Grand Theft Auto</h1>
+                <p class="game-subtitle">Heist diamonds and rubies worth millions</p>
+            </div>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-card"><span class="stat-value">7</span><span class="stat-label">Minerals</span></div>
+            <div class="stat-card"><span class="stat-value">7</span><span class="stat-label">Specimens</span></div>
+            <div class="stat-card"><span class="stat-value">Low</span><span class="stat-label">Diversity</span></div>
+        </div>
+        <div class="info-box">
+            <p class="info-text">
+                <strong style="color: var(--text-primary)">GTA</strong> features diamonds and rubies - the ultimate heist prizes. 
+                Learn about the geology of these precious gems!
+            </p>
+        </div>
+    </div>
+
+    <script>
+        const games = {
+            'minecraft': { icon: '⛏️', name: 'Minecraft' },
+            'stardew': { icon: '🌾', name: 'Stardew Valley' },
+            'gta': { icon: '💎', name: 'GTA' },
+            'wow': { icon: '⚔️', name: 'World of Warcraft' },
+            'zelda': { icon: '🗡️', name: 'Zelda' },
+            'ff': { icon: '✨', name: 'Final Fantasy' },
+            'elite': { icon: '🚀', name: 'Elite Dangerous' },
+            'witcher': { icon: '🐺', name: 'The Witcher' }
+        };
+
+        let currentGame = 'minecraft';
+
+        function toggleGameMenu() {
+            document.getElementById('gameMenuOverlay').classList.toggle('active');
+        }
+
+        function closeGameMenu() {
+            document.getElementById('gameMenuOverlay').classList.remove('active');
+        }
+
+        function selectGame(gameId) {
+            // Hide current game content
+            const currentContent = document.getElementById(currentGame + '-content');
+            if (currentContent) currentContent.classList.add('hidden');
+
+            // Show new game content
+            const newContent = document.getElementById(gameId + '-content');
+            if (newContent) newContent.classList.remove('hidden');
+
+            // Update navigation
+            currentGame = gameId;
+            document.getElementById('currentGameIcon').textContent = games[gameId].icon;
+            document.getElementById('currentGameName').textContent = games[gameId].name;
+
+            // Update active card
+            document.querySelectorAll('.game-card').forEach(card => card.classList.remove('active'));
+            event.currentTarget.classList.add('active');
+
+            // Close menu and scroll to top
+            closeGameMenu();
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="theme-color" content="#1a1a1a">
+    <title>Stardew Valley - Mineralogy in Video Games | TGMS 2026 Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #1a1a1a;
+            --bg-card: #252525;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --accent: #4a9eff;
+            --accent-hover: #6ab0ff;
+            --border: #333333;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        .hero {
+            position: relative;
+            height: 40vh;
+            min-height: 280px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-content {
+            text-align: center;
+            padding: 2rem 1.5rem;
+        }
+
+        .game-logo {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #4a9eff 0%, #7ec8ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .game-subtitle {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.5rem;
+            padding: 1rem 1rem 0.5rem;
+            background: var(--bg-secondary);
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1rem 0.75rem;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .section {
+            padding: 1.5rem 1rem;
+            background: var(--bg-secondary);
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding: 0 0.25rem;
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .view-toggle {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .toggle-btn {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            padding: 0.4rem 0.8rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .toggle-btn.active {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+
+        .mineral-gallery {
+            display: flex;
+            gap: 1rem;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            padding: 0.5rem 1rem 1.5rem;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            margin: 0 -1rem;
+        }
+
+        .mineral-gallery::-webkit-scrollbar {
+            display: none;
+        }
+
+        .mineral-card {
+            flex: 0 0 280px;
+            scroll-snap-align: center;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .mineral-card:first-child {
+            margin-left: 1rem;
+        }
+
+        .mineral-card:last-child {
+            margin-right: 1rem;
+        }
+
+        .mineral-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .mineral-info {
+            padding: 1rem;
+        }
+
+        .mineral-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .mineral-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .meta-tag {
+            background: rgba(74, 158, 255, 0.15);
+            color: var(--accent);
+            padding: 0.25rem 0.6rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .mineral-description {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(4px);
+            z-index: 1000;
+            display: none;
+            align-items: flex-end;
+            animation: fadeIn 0.2s ease;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            background: var(--bg-secondary);
+            width: 100%;
+            max-height: 90vh;
+            border-radius: 24px 24px 0 0;
+            overflow-y: auto;
+            animation: slideUp 0.3s ease;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(100%); }
+            to { transform: translateY(0); }
+        }
+
+        .modal-handle {
+            width: 40px;
+            height: 4px;
+            background: var(--border);
+            border-radius: 2px;
+            margin: 12px auto 8px;
+        }
+
+        .modal-image {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+        }
+
+        .modal-body {
+            padding: 1.5rem;
+        }
+
+        .modal-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .modal-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .modal-section-title {
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-secondary);
+            margin-bottom: 0.75rem;
+        }
+
+        .property-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
+        }
+
+        .property {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 0.75rem;
+        }
+
+        .property-label {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.25rem;
+        }
+
+        .property-value {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .close-btn {
+            position: sticky;
+            bottom: 1.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: calc(100% - 3rem);
+            max-width: 400px;
+        }
+
+        .fun-fact {
+            background: rgba(74, 158, 255, 0.1);
+            border: 1px solid rgba(74, 158, 255, 0.3);
+            border-radius: 12px;
+            padding: 1rem;
+        }
+
+        .about-section {
+            background: var(--bg-primary);
+            padding: 2rem 1rem;
+        }
+
+        .about-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .about-text {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .curator-info {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1rem;
+            margin-top: 1.5rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1 class="game-logo">Stardew Valley</h1>
+            <p class="game-subtitle">A farming simulation RPG with a museum collection mechanic</p>
+        </div>
+    </div>
+
+    <!-- Stats Grid -->
+    <div class="stats-grid">
+        <div class="stat-card">
+            <span class="stat-value">6</span>
+            <span class="stat-label">Minerals</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-value">6</span>
+            <span class="stat-label">Specimens</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-value">Medium</span>
+            <span class="stat-label">Diversity</span>
+        </div>
+    </div>
+
+    <!-- Mineral Collection -->
+    <div class="section">
+        <div class="section-header">
+            <h2 class="section-title">Museum Collection</h2>
+            <div class="view-toggle">
+                <button class="toggle-btn active">Gallery</button>
+                <button class="toggle-btn">List</button>
+            </div>
+        </div>
+
+        <div class="mineral-gallery">
+            <div class="mineral-card" onclick="showModal('malachite')">
+                <div class="mineral-image">📸 Malachite Photo</div>
+                <div class="mineral-info">
+                    <h3 class="mineral-name">Malachite</h3>
+                    <div class="mineral-meta">
+                        <span class="meta-tag">bowl</span>
+                        <span class="meta-tag">#24460</span>
+                        <span class="meta-tag">Common</span>
+                    </div>
+                    <p class="mineral-description">A copper carbonate hydroxide mineral prized for its distinctive green banded patterns.</p>
+                </div>
+            </div>
+
+            <div class="mineral-card" onclick="showModal('neptunite')">
+                <div class="mineral-image">📸 Neptunite Photo</div>
+                <div class="mineral-info">
+                    <h3 class="mineral-name">Neptunite</h3>
+                    <div class="mineral-meta">
+                        <span class="meta-tag">rock</span>
+                        <span class="meta-tag">#20200</span>
+                        <span class="meta-tag">Rare</span>
+                    </div>
+                    <p class="mineral-description">A rare titanosilicate mineral forming prismatic crystals. Named after Neptune.</p>
+                </div>
+            </div>
+
+            <div class="mineral-card" onclick="showModal('celestine')">
+                <div class="mineral-image">📸 Celestine Photo</div>
+                <div class="mineral-info">
+                    <h3 class="mineral-name">Celestine</h3>
+                    <div class="mineral-meta">
+                        <span class="meta-tag">mineral</span>
+                        <span class="meta-tag">#22263</span>
+                        <span class="meta-tag">Uncommon</span>
+                    </div>
+                    <p class="mineral-description">A strontium sulfate mineral named for its often celestial blue color.</p>
+                </div>
+            </div>
+
+            <div class="mineral-card" onclick="showModal('baryte')">
+                <div class="mineral-image">📸 Baryte Photo</div>
+                <div class="mineral-info">
+                    <h3 class="mineral-name">Baryte</h3>
+                    <div class="mineral-meta">
+                        <span class="meta-tag">gem</span>
+                        <span class="meta-tag">#47121</span>
+                        <span class="meta-tag">Common</span>
+                    </div>
+                    <p class="mineral-description">A barium sulfate mineral, unusually heavy for a non-metallic mineral.</p>
+                </div>
+            </div>
+
+            <div class="mineral-card" onclick="showModal('kyanite')">
+                <div class="mineral-image">📸 Kyanite Photo</div>
+                <div class="mineral-info">
+                    <h3 class="mineral-name">Kyanite</h3>
+                    <div class="mineral-meta">
+                        <span class="meta-tag">gem</span>
+                        <span class="meta-tag">#25333</span>
+                        <span class="meta-tag">Uncommon</span>
+                    </div>
+                    <p class="mineral-description">An aluminum silicate with anisotropic hardness—harder along one axis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="about-section">
+        <div class="about-content">
+            <h2 class="section-title" style="margin-bottom: 1rem;">About This Exhibit</h2>
+            <p class="about-text">
+                This exhibition explores how video games represent mineralogy, comparing virtual minerals 
+                with real specimens from the Natural History Museum of Los Angeles County collection.
+            </p>
+            <p class="about-text">
+                In <strong style="color: var(--text-primary)">Stardew Valley</strong>, players 
+                collect minerals through mining and geode cracking, donating them to Gunther's museum 
+                in Pelican Town. The game includes 6 different minerals with varying rarity and uses.
+            </p>
+            <div class="curator-info">
+                Curated by Dr. Aaron Celestian<br>
+                Natural History Museum of Los Angeles County<br>
+                Tucson Gem & Mineral Show 2026
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal-overlay" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <div class="modal-handle"></div>
+            <div id="modal-image" class="modal-image">📸 Mineral Photo</div>
+            <div class="modal-body">
+                <h2 id="modal-title" class="modal-title">Malachite</h2>
+                
+                <div class="modal-section">
+                    <h3 class="modal-section-title">Physical Properties</h3>
+                    <div class="property-grid">
+                        <div class="property">
+                            <div class="property-label">Chemical Formula</div>
+                            <div id="modal-formula" class="property-value">Cu₂CO₃(OH)₂</div>
+                        </div>
+                        <div class="property">
+                            <div class="property-label">Crystal System</div>
+                            <div id="modal-crystal" class="property-value">Monoclinic</div>
+                        </div>
+                        <div class="property">
+                            <div class="property-label">Hardness (Mohs)</div>
+                            <div id="modal-hardness" class="property-value">3.5-4</div>
+                        </div>
+                        <div class="property">
+                            <div class="property-label">Color</div>
+                            <div id="modal-color" class="property-value">Green</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-section">
+                    <h3 class="modal-section-title">Specimen Information</h3>
+                    <div class="property-grid">
+                        <div class="property">
+                            <div class="property-label">NHMLAC ID</div>
+                            <div id="modal-specimen" class="property-value">#24460</div>
+                        </div>
+                        <div class="property">
+                            <div class="property-label">Specimen Type</div>
+                            <div id="modal-type" class="property-value">bowl</div>
+                        </div>
+                        <div class="property">
+                            <div class="property-label">Rarity</div>
+                            <div id="modal-rarity" class="property-value">Common</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-section">
+                    <h3 class="modal-section-title">In Stardew Valley</h3>
+                    <p id="modal-ingame" style="color: var(--text-primary); line-height: 1.6; margin-bottom: 1rem;">
+                        Museum donation, crafting material
+                    </p>
+                </div>
+
+                <div class="modal-section">
+                    <h3 class="modal-section-title">Real-World Applications</h3>
+                    <p id="modal-realworld" style="color: var(--text-primary); line-height: 1.6; margin-bottom: 1rem;">
+                        Copper ore, ornamental stone, pigment source
+                    </p>
+                </div>
+
+                <div class="modal-section">
+                    <h3 class="modal-section-title">Mineralogy</h3>
+                    <p id="modal-desc" style="color: var(--text-primary); line-height: 1.6; margin-bottom: 1rem;">
+                        A copper carbonate hydroxide mineral prized for its distinctive green banded patterns.
+                    </p>
+                </div>
+
+                <div id="modal-funfact" class="modal-section fun-fact">
+                    <h3 class="modal-section-title" style="color: var(--accent);">💎 Fun Fact</h3>
+                    <p style="color: var(--text-primary); line-height: 1.6; margin-bottom: 0;">
+                        Ancient Egyptians ground malachite into powder for eye shadow and used it in amulets.
+                    </p>
+                </div>
+
+                <button class="close-btn" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const mineralData = {
+            malachite: {
+                title: "Malachite",
+                formula: "Cu₂CO₃(OH)₂",
+                crystal: "Monoclinic",
+                hardness: "3.5-4",
+                color: "Green with banding",
+                specimen: "#24460",
+                type: "bowl",
+                rarity: "Common",
+                ingame: "Museum donation, crafting material",
+                realworld: "Copper ore, ornamental stone, pigment source",
+                desc: "A copper carbonate hydroxide mineral prized for its distinctive green banded patterns. In Stardew Valley, malachite is donated to Gunther's museum and can be used in crafting.",
+                funfact: "Ancient Egyptians ground malachite into powder for eye shadow and used it in amulets for protection."
+            },
+            neptunite: {
+                title: "Neptunite",
+                formula: "KNa₂Li(Fe²⁺,Mn²⁺)₂Ti₂Si₈O₂₄",
+                crystal: "Monoclinic",
+                hardness: "5-6",
+                color: "Black to dark red-brown",
+                specimen: "#20200",
+                type: "rock",
+                rarity: "Rare",
+                ingame: "Museum donation, rare mineral",
+                realworld: "Mineral specimens for collectors",
+                desc: "A rare titanosilicate mineral forming prismatic crystals. Named after Neptune, the Roman god of the sea, due to its oceanic associations in California localities.",
+                funfact: "Neptunite is almost exclusively found in a few locations in California, making it a highly sought-after collector's mineral."
+            },
+            celestine: {
+                title: "Celestine (Celestite)",
+                formula: "SrSO₄",
+                crystal: "Orthorhombic",
+                hardness: "3-3.5",
+                color: "Sky blue, white, colorless",
+                specimen: "#22263",
+                type: "mineral",
+                rarity: "Uncommon",
+                ingame: "Museum donation, geode mineral",
+                realworld: "Primary ore of strontium, used in fireworks and flares",
+                desc: "A strontium sulfate mineral named for its often celestial blue color. Forms beautiful tabular or prismatic crystals in sedimentary environments.",
+                funfact: "The red color in emergency flares and fireworks comes from strontium extracted from celestine."
+            },
+            baryte: {
+                title: "Baryte",
+                formula: "BaSO₄",
+                crystal: "Orthorhombic",
+                hardness: "3-3.5",
+                color: "Colorless, white, blue, brown",
+                specimen: "#47121",
+                type: "gem",
+                rarity: "Common",
+                ingame: "Museum donation",
+                realworld: "Drilling mud in oil/gas wells, medical imaging contrast agent",
+                desc: "A barium sulfate mineral, unusually heavy for a non-metallic mineral. The name comes from the Greek 'barys' meaning 'heavy.'",
+                funfact: "You've probably swallowed baryte if you've ever had a barium x-ray examination at a hospital!"
+            },
+            kyanite: {
+                title: "Kyanite",
+                formula: "Al₂SiO₅",
+                crystal: "Triclinic",
+                hardness: "4.5-7",
+                color: "Blue, white, gray, green",
+                specimen: "#25333",
+                type: "gem",
+                rarity: "Uncommon",
+                ingame: "Museum donation, rare find",
+                realworld: "Refractory ceramics, gemstone",
+                desc: "An aluminum silicate polymorph with anisotropic hardness—harder along one axis than perpendicular to it. Usually forms blade-like blue crystals.",
+                funfact: "Kyanite has different hardness values depending on the direction you scratch it—4.5 in one direction, 7 in the other!"
+            }
+        };
+
+        function showModal(mineralId) {
+            const data = mineralData[mineralId];
+            document.getElementById('modal-title').textContent = data.title;
+            document.getElementById('modal-formula').textContent = data.formula;
+            document.getElementById('modal-crystal').textContent = data.crystal;
+            document.getElementById('modal-hardness').textContent = data.hardness;
+            document.getElementById('modal-color').textContent = data.color;
+            document.getElementById('modal-specimen').textContent = data.specimen;
+            document.getElementById('modal-type').textContent = data.type;
+            document.getElementById('modal-rarity').textContent = data.rarity;
+            document.getElementById('modal-ingame').textContent = data.ingame;
+            document.getElementById('modal-realworld').textContent = data.realworld;
+            document.getElementById('modal-desc').textContent = data.desc;
+            document.getElementById('modal-funfact').querySelector('p').textContent = data.funfact;
+            
+            document.getElementById('modal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('modal').classList.remove('active');
+            document.body.style.overflow = 'unset';
+        }
+    </script>
+</body>
+</html>
