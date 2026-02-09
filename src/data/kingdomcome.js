@@ -7,7 +7,7 @@ export const kingdomComeData = {
     releaseYear: 2018,
     totalMinerals: 7,
     totalSpecimens: 4,
-    diversityScore: "Low-Medium",
+    diversityScore: "Medium",
     gameDescription: "Kingdom Come: Deliverance features approximately 7 realistic medieval materials including Iron, Copper, Silver, Gold, Charcoal, and Sulphur. These materials are used in historically accurate blacksmithing and alchemy systems. The game emphasizes period-appropriate gemstones and metals that would have been available in 15th century Bohemia."
   },
   minerals: [

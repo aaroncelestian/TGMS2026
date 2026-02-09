@@ -7,7 +7,7 @@ export const zeldaData = {
     releaseYear: 1986,
     totalMinerals: 9,
     totalSpecimens: 4,
-    diversityScore: "Medium",
+    diversityScore: "Low",
     gameDescription: "In The Legend of Zelda series, particularly Breath of the Wild and Tears of the Kingdom, players gather 9 different minerals including Amber, Opal, Topaz, Ruby, Sapphire, Diamond, and various ores. These materials are used for upgrading armor, selling to merchants, and crafting jewelry that provides special effects and resistances."
   },
   minerals: [

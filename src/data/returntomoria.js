@@ -7,7 +7,7 @@ export const returnToMoriaData = {
     releaseYear: 2023,
     totalMinerals: 20,
     totalSpecimens: 6,
-    diversityScore: "Medium",
+    diversityScore: "High",
     gameDescription: "The Lord of the Rings: Return to Moria features 20 different ores and gems ranging from common Iron and Tin to the legendary Mithril. As dwarves reclaiming Moria, players mine deep into the mountain to gather resources for crafting weapons, armor, and rebuilding the ancient dwarven kingdom. Mining is the core gameplay loop, faithful to Tolkien's lore."
   },
   minerals: [

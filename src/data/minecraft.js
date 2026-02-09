@@ -7,7 +7,7 @@ export const minecraftData = {
     releaseYear: 2011,
     totalMinerals: 11,
     totalSpecimens: 10,
-    diversityScore: "Medium-High",
+    diversityScore: "High",
     gameDescription: "In Minecraft, players mine 11 different ores and minerals including Coal, Iron, Copper, Gold, Redstone, Lapis Lazuli, Diamond, Emerald, Quartz, Nether Gold, and Ancient Debris. Mining is central to progression, with each mineral serving specific purposes from crafting tools and armor to enchanting and trading with villagers."
   },
   minerals: [

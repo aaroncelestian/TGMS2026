@@ -7,7 +7,7 @@ export const astroneerData = {
     releaseYear: 2016,
     totalMinerals: 15,
     totalSpecimens: 5,
-    diversityScore: "Medium",
+    diversityScore: "High",
     gameDescription: "Astroneer features 15 natural resources found across different planets, including Sphalerite, Malachite, Wolframite, Hematite, and the mysterious Astronium. Players mine these materials using terrain tools and process them through smelters and refineries to create base components, vehicles, and equipment for interplanetary exploration."
   },
   minerals: [

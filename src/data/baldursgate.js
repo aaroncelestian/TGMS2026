@@ -7,7 +7,7 @@ export const baldursGateData = {
     releaseYear: 1998,
     totalMinerals: 2,
     totalSpecimens: 7,
-    diversityScore: "Medium",
+    diversityScore: "Low",
     gameDescription: "Baldur's Gate 3 features 2 primary ores used for specialized forging: Mithral and Adamantine. These legendary metals are found in the Underdark and can be used to craft powerful armor and weapons at the Adamantine Forge. The game also includes various gemstones as valuable treasure and spell components, following D&D 5th edition rules."
   },
   minerals: [

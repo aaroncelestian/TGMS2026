@@ -7,7 +7,7 @@ export const dwarfFortressData = {
     releaseYear: 2006,
     totalMinerals: 200,
     totalSpecimens: 3,
-    diversityScore: "Medium-High",
+    diversityScore: "Exceptional",
     gameDescription: "Dwarf Fortress simulates over 200 different stones and ores, including approximately 40 economic ores and 150+ types of stone layers. This legendary game features the most realistic and detailed geology system in gaming, with minerals used for construction, metalworking, gem cutting, and trade. Each stone type has unique properties affecting fortress design and industry."
   },
   minerals: [

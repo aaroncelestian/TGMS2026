@@ -7,7 +7,7 @@ export const theWitcherData = {
     releaseYear: 2007,
     totalMinerals: 24,
     totalSpecimens: 6,
-    diversityScore: "Low-Medium",
+    diversityScore: "High",
     gameDescription: "The Witcher 3 features approximately 24 alchemy minerals including Phosphorus, Sulfur, Quicksilver, and Saltpeter. These materials are gathered from the environment and monster loot, used primarily in alchemy for crafting potions, oils, and bombs. The game also includes a unique pearl collection system with various rare pearls found in coastal areas."
   },
   minerals: [

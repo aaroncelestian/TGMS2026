@@ -7,7 +7,7 @@ export const eliteDangerousData = {
     releaseYear: 2014,
     totalMinerals: 33,
     totalSpecimens: 6,
-    diversityScore: "Medium",
+    diversityScore: "High",
     gameDescription: "Elite Dangerous features 33 distinct mineral commodities that can be mined from asteroids and planetary rings. Players use specialized mining equipment to extract valuable materials like Painite, Void Opals, and Low Temperature Diamonds. Mining is a core profession in the game's economy, with minerals used for trading, crafting, and engineering ship upgrades."
   },
   minerals: [
