@@ -5,10 +5,10 @@ export const gtaData = {
     tagline: "Iconic heist game featuring ultimate luxury minerals",
     developer: "Rockstar Games",
     releaseYear: 1997,
-    totalMinerals: 0,
+    totalMinerals: 2,
     totalSpecimens: 7,
     diversityScore: "Low",
-    gameDescription: "Grand Theft Auto does not feature a mining or mineral-gathering system. Instead, diamonds and rubies appear as ultimate luxury items in heists and jewelry stores, representing wealth and high-stakes crime. These precious gems serve as narrative symbols of the criminal underworld's pursuit of fortune."
+    gameDescription: "Grand Theft Auto does not feature a mining or mineral-gathering system. However, diamonds and rubies appear as ultimate luxury items in heists and jewelry stores, representing wealth and high-stakes crime. These 2 precious gem types serve as narrative symbols of the criminal underworld's pursuit of fortune."
   },
   minerals: [
     {
