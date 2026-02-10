@@ -6,7 +6,7 @@ export const zeldaData = {
     developer: "Nintendo",
     releaseYear: 1986,
     totalMinerals: 9,
-    totalSpecimens: 4,
+    totalSpecimens: 3,
     diversityScore: "Low",
     gameDescription: "In The Legend of Zelda series, particularly Breath of the Wild and Tears of the Kingdom, players gather 9 different minerals including Amber, Opal, Topaz, Ruby, Sapphire, Diamond, and various ores. These materials are used for upgrading armor, selling to merchants, and crafting jewelry that provides special effects and resistances."
   },
@@ -27,23 +27,6 @@ export const zeldaData = {
       locality: "N/A",
       imageUrl: "/TGMS2026/images/zelda/opal-1.jpg",
       funFact: "Opals can contain up to 20% water! In Breath of the Wild, opals are worth 60 rupees each."
-    },
-    {
-      id: "opal-2",
-      name: "Opal (Fire Opal)",
-      formula: "SiO₂·nH₂O",
-      specimenId: "33174",
-      type: "rock",
-      crystalSystem: "Amorphous",
-      hardness: "5.5-6.5",
-      color: "Orange, red, yellow",
-      description: "Fire opal is a transparent to translucent opal with warm body colors ranging from yellow through orange to red. May or may not show play-of-color. Mexico is the primary source.",
-      inGameUse: "Gemstone for trading and armor enhancement",
-      realWorldUse: "Collector gemstone, jewelry (especially popular in Mexico)",
-      rarity: "Uncommon",
-      locality: "N/A",
-      imageUrl: "/TGMS2026/images/zelda/opal-2.jpg",
-      funFact: "Ancient Romans believed opals brought good luck, while some cultures thought they could make you invisible!"
     },
     {
       id: "amethyst-gem",
