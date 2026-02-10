@@ -30,7 +30,7 @@ export const returnToMoriaData = {
     },
     {
       id: "sunstone-gem-2",
-      name: "Sunstone (Cabochon)",
+      name: "Sunstone",
       formula: "(Ca,Na)(Al,Si)₄O₈",
       specimenId: "74536",
       type: "gem",

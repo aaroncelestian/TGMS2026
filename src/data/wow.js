@@ -6,7 +6,7 @@ export const wowData = {
     developer: "Blizzard Entertainment",
     releaseYear: 2004,
     totalMinerals: 28,
-    totalSpecimens: 7,
+    totalSpecimens: 5,
     diversityScore: "High",
     gameDescription: "World of Warcraft features 28 different minerals and gems through its Mining and Jewelcrafting professions. Players mine ore nodes throughout Azeroth to gather materials for crafting armor, weapons, and jewelry. The Jewelcrafting profession allows players to cut and socket gems into gear, providing stat bonuses and customization options."
   },
@@ -63,23 +63,6 @@ export const wowData = {
       funFact: "The famous 'Mandarin garnets' from Namibia are spessartines so bright orange they revolutionized the gem market in the 1990s!"
     },
     {
-      id: "garnet-spess-2",
-      name: "Garnet (Spessartine) - Faceted",
-      formula: "Mn₃Al₂(SiO₄)₃",
-      specimenId: "33319",
-      type: "gem",
-      crystalSystem: "Cubic",
-      hardness: "7-7.5",
-      color: "Bright orange",
-      description: "Cut and polished spessartine garnet showing brilliant fire and color. High-quality spessartines from Nigeria and Namibia are among the most sought-after garnets.",
-      inGameUse: "Processed gem for high-level gear socketing",
-      realWorldUse: "Fine jewelry, particularly popular in designer pieces",
-      rarity: "Uncommon",
-      locality: "N/A",
-      imageUrl: "/TGMS2026/images/wow/garnet-spess-2.jpg",
-      funFact: "Spessartine garnets can show a color-change effect under different lighting, appearing more red in incandescent light!"
-    },
-    {
       id: "garnet-spess-3",
       name: "Garnet (Spessartine) - Large Crystal",
       formula: "Mn₃Al₂(SiO₄)₃",
@@ -95,23 +78,6 @@ export const wowData = {
       locality: "N/A",
       imageUrl: "/TGMS2026/images/wow/garnet-spess-3.jpg",
       funFact: "Garnet crystals are so well-formed they were used as ball bearings in early machinery!"
-    },
-    {
-      id: "garnet-spess-rock",
-      name: "Garnet (in Schist)",
-      formula: "Mn₃Al₂(SiO₄)₃",
-      specimenId: "25288",
-      type: "rock",
-      crystalSystem: "Cubic (in metamorphic rock)",
-      hardness: "7-7.5",
-      color: "Red-orange crystals in gray matrix",
-      description: "Garnet crystals embedded in mica schist, their typical metamorphic host rock. This shows how garnets naturally occur during regional metamorphism of sedimentary rocks.",
-      inGameUse: "Represents unprocessed garnet ore",
-      realWorldUse: "Shows geological context, educational specimens",
-      rarity: "Common",
-      locality: "N/A",
-      imageUrl: "/TGMS2026/images/wow/garnet-rock.jpg",
-      funFact: "Geologists use garnets as 'geothermometers' to calculate the temperature and pressure conditions during metamorphism!"
     },
     {
       id: "ametrine",

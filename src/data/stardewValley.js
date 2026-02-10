@@ -6,7 +6,7 @@ export const stardewValleyData = {
     developer: "ConcernedApe",
     releaseYear: 2016,
     totalMinerals: 19,
-    totalSpecimens: 6,
+    totalSpecimens: 7,
     diversityScore: "High",
     gameDescription: "In Stardew Valley, players collect 19 different minerals through mining in the caves and geode cracking. Minerals can be donated to Gunther's museum in Pelican Town for rewards, sold for profit, or used in crafting and construction. The museum collection mechanic encourages players to explore the geological diversity of the valley."
   },
@@ -80,21 +80,21 @@ export const stardewValleyData = {
       funFact: "You've probably swallowed baryte if you've ever had a barium x-ray examination at a hospital!"
     },
     {
-      id: "baryte-rock",
-      name: "Baryte (Desert Rose)",
+      id: "baryte-mineral",
+      name: "Baryte Crystal",
       formula: "BaSO₄",
-      specimenId: "76060",
-      type: "rock",
+      specimenId: "TBD",
+      type: "mineral",
       crystalSystem: "Orthorhombic",
       hardness: "3-3.5",
-      color: "Tan, brown, reddish",
-      description: "Rosette-shaped baryte crystal clusters that form in arid environments, often incorporating sand grains. These 'desert roses' are actually baryte, not gypsum as commonly believed.",
-      inGameUse: "Museum donation",
-      realWorldUse: "Collector specimens, drilling industry",
+      color: "Colorless to white",
+      description: "TBD",
+      inGameUse: "TBD",
+      realWorldUse: "TBD",
       rarity: "Common",
       locality: "N/A",
-      imageUrl: "/TGMS2026/images/stardew-valley/baryte-rock.jpg",
-      funFact: "Desert roses form when baryte crystallizes in sandy soil during evaporation in arid climates."
+      imageUrl: "/TGMS2026/images/stardew-valley/baryte-mineral.jpg",
+      funFact: "TBD"
     },
     {
       id: "kyanite-gem",
@@ -112,6 +112,23 @@ export const stardewValleyData = {
       locality: "N/A",
       imageUrl: "/TGMS2026/images/stardew-valley/kyanite-gem.jpg",
       funFact: "Kyanite has different hardness values depending on the direction you scratch it—4.5 in one direction, 7 in the other!"
+    },
+    {
+      id: "kyanite-mineral",
+      name: "Kyanite Crystal",
+      formula: "Al₂SiO₅",
+      specimenId: "TBD",
+      type: "mineral",
+      crystalSystem: "Triclinic",
+      hardness: "4.5-7",
+      color: "Blue",
+      description: "TBD",
+      inGameUse: "TBD",
+      realWorldUse: "TBD",
+      rarity: "Uncommon",
+      locality: "N/A",
+      imageUrl: "/TGMS2026/images/stardew-valley/kyanite-mineral.jpg",
+      funFact: "TBD"
     }
   ]
 };

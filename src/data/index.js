@@ -56,11 +56,11 @@ export {
 // Game list for navigation
 export const gameList = [
   { id: 'minecraft', name: 'Minecraft', icon: '⛏️', specimens: 7 },
-  { id: 'stardew-valley', name: 'Stardew Valley', icon: '🌾', specimens: 6 },
+  { id: 'stardew-valley', name: 'Stardew Valley', icon: '🌾', specimens: 7 },
   { id: 'gta', name: 'GTA', icon: '💎', specimens: 5 },
-  { id: 'wow', name: 'World of Warcraft', icon: '⚔️', specimens: 7 },
+  { id: 'wow', name: 'World of Warcraft', icon: '⚔️', specimens: 5 },
   { id: 'zelda', name: 'The Legend of Zelda', icon: '🗡️', specimens: 4 },
-  { id: 'final-fantasy', name: 'Final Fantasy', icon: '✨', specimens: 6 },
+  { id: 'final-fantasy', name: 'Final Fantasy', icon: '✨', specimens: 5 },
   { id: 'elite-dangerous', name: 'Elite Dangerous', icon: '🚀', specimens: 4 },
   { id: 'the-witcher', name: 'The Witcher', icon: '🐺', specimens: 4 },
   { id: 'baldurs-gate', name: "Baldur's Gate", icon: '🎲', specimens: 4 },

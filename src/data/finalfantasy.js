@@ -6,28 +6,11 @@ export const finalFantasyData = {
     developer: "Square Enix",
     releaseYear: 1987,
     totalMinerals: 23,
-    totalSpecimens: 6,
+    totalSpecimens: 5,
     diversityScore: "High",
     gameDescription: "Final Fantasy XIV features 23 different minerals and gems through its Mining and Goldsmithing crafting systems. Players gather raw materials from mining nodes across Eorzea to craft jewelry, accessories, and components for weapons and armor. The game's crystal-based magic system also incorporates elemental crystals as a core gameplay mechanic."
   },
   minerals: [
-    {
-      id: "pink-beryl-gem",
-      name: "Pink Beryl (Morganite)",
-      formula: "Be₃Al₂Si₆O₁₈",
-      specimenId: "37446",
-      type: "gem",
-      crystalSystem: "Hexagonal",
-      hardness: "7.5-8",
-      color: "Pink, peach, salmon",
-      description: "Pink variety of beryl colored by manganese, named after banker J.P. Morgan. Part of the beryl family that includes emerald and aquamarine. In Final Fantasy, pink crystals often represent love or healing magic.",
-      inGameUse: "Rare crafting material, magic enhancement, quest item",
-      realWorldUse: "Gemstone jewelry (increasingly popular for engagement rings)",
-      rarity: "Uncommon",
-      locality: "N/A",
-      imageUrl: "/TGMS2026/images/final-fantasy/pink-beryl-gem.jpg",
-      funFact: "Morganite was discovered in Madagascar in 1910. Tiffany & Co.'s gemologist named it after J.P. Morgan who was a major gem collector!"
-    },
     {
       id: "pink-beryl-mineral",
       name: "Pink Beryl (Crystal)",
