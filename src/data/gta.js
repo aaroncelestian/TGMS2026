@@ -24,6 +24,7 @@ export const gtaData = {
       inGameUse: "High-value heist target (Casino Heist diamonds worth $3.6M), luxury item",
       realWorldUse: "Gemstone jewelry, industrial cutting/drilling, thermal conductors, semiconductors",
       rarity: "Rare (as gemstone)",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/gta/diamond-earrings.jpg",
       funFact: "The GTA Online Casino Heist diamond haul would weigh about 5 pounds in real life!"
     },
@@ -40,8 +41,9 @@ export const gtaData = {
       inGameUse: "High-end jewelry store loot",
       realWorldUse: "Cut into brilliant gems, industrial tools",
       rarity: "Rare",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/gta/diamond-rough-3.jpg",
-      funFact: "The Hope Diamond (45.52 carats, deep blue) is valued at $250 million and supposedly cursed!"
+      funFact: "The Hope Diamond (45.52 carats, deep blue) is said to be cursed!"
     },
     {
       id: "diamond-matrix",
@@ -56,6 +58,7 @@ export const gtaData = {
       inGameUse: "Represents diamond mining operations",
       realWorldUse: "Shows geological context of diamond formation, museum/educational specimens",
       rarity: "Rare",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/gta/diamond-matrix.jpg",
       funFact: "Kimberlite eruptions are so violent (faster than the speed of sound) they haven't occurred in recorded human history!"
     },
@@ -72,8 +75,9 @@ export const gtaData = {
       inGameUse: "Jewelry store merchandise, luxury collectible",
       realWorldUse: "Precious gemstone, laser components (ruby lasers), watch bearings",
       rarity: "Rare",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/gta/ruby-gem.jpg",
-      funFact: "The Sunrise Ruby sold for $30 million in 2015, making it the most expensive ruby ever. Large, fine rubies are rarer than comparable diamonds!"
+      funFact: "The Sunrise Ruby (25 ct) sold for $30 million in 2015, making it the most expensive ruby ever. Large, fine rubies are rarer than comparable diamonds!"
     },
     {
       id: "ruby-mineral",
@@ -88,6 +92,7 @@ export const gtaData = {
       inGameUse: "High-value luxury item",
       realWorldUse: "Cut into gemstones, industrial applications, museum specimens",
       rarity: "Rare",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/gta/ruby-mineral.jpg",
       funFact: "Ancient Hindus called ruby 'ratnaraj' (king of precious stones) and believed it protected warriors in battle!"
     }

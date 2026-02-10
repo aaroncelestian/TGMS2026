@@ -24,6 +24,7 @@ export const elderScrollsData = {
       inGameUse: "Jewelry crafting, alchemy ingredient, valuable trade good",
       realWorldUse: "Gemstone jewelry, abrasives, water filtration media",
       rarity: "Common",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/elder-scrolls/red-garnet-gem.jpg",
       funFact: "The name 'garnet' comes from the Latin 'granatum' meaning pomegranate, because the crystals resemble pomegranate seeds!"
     },
@@ -40,6 +41,7 @@ export const elderScrollsData = {
       inGameUse: "Raw garnet ore, mining loot, smithing material",
       realWorldUse: "Mineral specimens, industrial abrasives, gemstone source",
       rarity: "Common",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/elder-scrolls/red-garnet-mineral.jpg",
       funFact: "Garnets are actually a group of over 20 different minerals! They all share the same crystal structure but have different chemical compositions."
     }

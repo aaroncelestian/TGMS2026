@@ -24,6 +24,7 @@ export const finalFantasyData = {
       inGameUse: "Rare crafting material, magic enhancement, quest item",
       realWorldUse: "Gemstone jewelry (increasingly popular for engagement rings)",
       rarity: "Uncommon",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/final-fantasy/pink-beryl-gem.jpg",
       funFact: "Morganite was discovered in Madagascar in 1910. Tiffany & Co.'s gemologist named it after J.P. Morgan who was a major gem collector!"
     },
@@ -40,6 +41,7 @@ export const finalFantasyData = {
       inGameUse: "Unprocessed crystal for crafting",
       realWorldUse: "Cut into gemstones, mineral collections",
       rarity: "Uncommon",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/final-fantasy/pink-beryl-mineral.jpg",
       funFact: "Some morganites are heated to deepen their color—a practice accepted in the gem trade!"
     },
@@ -56,8 +58,9 @@ export const finalFantasyData = {
       inGameUse: "High-tier magic gem, elemental materia component",
       realWorldUse: "Fine gemstone jewelry, particularly valued in pink and red colors",
       rarity: "Rare",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/final-fantasy/rubellite-gem.jpg",
-      funFact: "Tourmaline is pyroelectric—when heated, it becomes electrically charged and attracts dust! Dutch traders noticed this and used it to clean their pipes."
+      funFact: "Tourmaline is pyroelectric—when heated or cooled, it develops an electrical charge on its surface that attracts dust and ash. Dutch traders in the 1700s noticed this property and used tourmaline crystals to clean ash from their pipes."
     },
     {
       id: "rubellite-rock",
@@ -72,6 +75,7 @@ export const finalFantasyData = {
       inGameUse: "Raw ore for extracting magical crystals",
       realWorldUse: "Source of gemstones, shows geological context",
       rarity: "Uncommon",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/final-fantasy/rubellite-rock.jpg",
       funFact: "Brazil's Paraíba tourmalines (electric blue-green) can sell for over $20,000 per carat!"
     },
@@ -88,6 +92,7 @@ export const finalFantasyData = {
       inGameUse: "Rare light-elemental crystal, white magic enhancement",
       realWorldUse: "Collector gemstone, relatively unknown in mainstream jewelry",
       rarity: "Rare",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/final-fantasy/danburite.jpg",
       funFact: "Danburite has higher dispersion (fire) than quartz, making cut stones very brilliant! It's one of the more 'undervalued' gemstones."
     },
@@ -104,6 +109,7 @@ export const finalFantasyData = {
       inGameUse: "Crafting material for weapons and armor, currency in some FF games",
       realWorldUse: "Ancient coinage, modern dental alloys, occasionally in jewelry",
       rarity: "Uncommon",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/final-fantasy/electrum.jpg",
       funFact: "The first metal coins in history (600 BCE in Lydia, now Turkey) were made of electrum! The ratio of gold to silver varied, causing economic problems."
     }

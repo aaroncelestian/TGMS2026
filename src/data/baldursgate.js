@@ -24,6 +24,7 @@ export const baldursGateData = {
       inGameUse: "Valuable trade good, spell component, quest item",
       realWorldUse: "Precious gemstone, jewelry, collector specimens",
       rarity: "Rare",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/baldurs-gate/black-opal-gem-1.jpg",
       funFact: "Virgin Valley, Nevada produces some of the world's most spectacular black opals! These opals formed in volcanic ash deposits and are known for their intense play-of-color, though they can be fragile due to their high water content."
     },
@@ -40,8 +41,9 @@ export const baldursGateData = {
       inGameUse: "High-value treasure, enchantment material",
       realWorldUse: "Fine jewelry, investment gemstone, collector specimens",
       rarity: "Rare",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/baldurs-gate/black-opal-gem-2.jpg",
-      funFact: "Virgin Valley opals can contain up to 20% water! They're more fragile than Australian opals and can crack if they dry out too quickly, which is why some collectors store them in water or mineral oil."
+      funFact: "Silica-rich groundwater infiltrates buried fossils, dissolving the original material and depositing opal in its place - like creating a mineral cast that preserves even microscopic details of ancient life."
     },
     {
       id: "turquoise-gem",
@@ -56,6 +58,7 @@ export const baldursGateData = {
       inGameUse: "Trade gem, decorative item, spell component",
       realWorldUse: "Gemstone jewelry, ornamental carvings, traditional medicine",
       rarity: "Uncommon",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/baldurs-gate/turquoise-gem.jpg",
       funFact: "Ancient Egyptians mined turquoise in the Sinai Peninsula over 5,000 years ago! The name comes from 'Turkish stone' because it was traded through Turkey."
     },
@@ -72,6 +75,7 @@ export const baldursGateData = {
       inGameUse: "Raw gemstone material, mining loot",
       realWorldUse: "Source for cut gems, traditional Native American jewelry",
       rarity: "Uncommon",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/baldurs-gate/turquoise-rock.jpg",
       funFact: "Turquoise can change color over time! Body oils, cosmetics, and sunlight can alter its blue color to green."
     },
@@ -88,6 +92,7 @@ export const baldursGateData = {
       inGameUse: "Valuable gem, enchantment component, quest reward",
       realWorldUse: "Rare gemstone, collector's item",
       rarity: "Rare",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/baldurs-gate/purple-garnet-gem-1.jpg",
       funFact: "Purple garnets are extremely rare! Most garnets are red, and the purple color comes from trace amounts of chromium and vanadium."
     }

@@ -24,6 +24,7 @@ export const zeldaData = {
       inGameUse: "Valuable gemstone for selling to merchants, armor upgrades (Breath of the Wild/Tears of the Kingdom)",
       realWorldUse: "Gemstone jewelry, particularly from Australia (95% of world supply)",
       rarity: "Uncommon",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/zelda/opal-1.jpg",
       funFact: "Opals can contain up to 20% water! In Breath of the Wild, opals are worth 60 rupees each."
     },
@@ -40,6 +41,7 @@ export const zeldaData = {
       inGameUse: "Gemstone for trading and armor enhancement",
       realWorldUse: "Collector gemstone, jewelry (especially popular in Mexico)",
       rarity: "Uncommon",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/zelda/opal-2.jpg",
       funFact: "Ancient Romans believed opals brought good luck, while some cultures thought they could make you invisible!"
     },
@@ -56,6 +58,7 @@ export const zeldaData = {
       inGameUse: "Valuable gem for selling (Skyward Sword, Breath of the Wild), armor upgrades",
       realWorldUse: "Gemstone jewelry, February birthstone, meditation and decorative stones",
       rarity: "Common",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/zelda/amethyst-gem.jpg",
       funFact: "The name 'amethyst' comes from Greek 'amethystos' meaning 'not intoxicated'—ancient Greeks believed it prevented drunkenness!"
     },
@@ -72,6 +75,7 @@ export const zeldaData = {
       inGameUse: "Mining resource, decorative element",
       realWorldUse: "Museum specimens, decorative geodes, large specimens for crystal collections",
       rarity: "Common",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/zelda/amethyst-mineral.jpg",
       funFact: "The largest amethyst geode ever found weighs over 13,000 pounds and is displayed in Australia. If you heat amethyst, it turns yellow (citrine)!"
     }

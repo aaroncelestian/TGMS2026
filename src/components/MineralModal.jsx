@@ -65,6 +65,10 @@ export function MineralModal({ mineral, onClose }) {
                 <div className="property-label">Rarity</div>
                 <div className="property-value">{mineral.rarity}</div>
               </div>
+              <div className="property">
+                <div className="property-label">Locality</div>
+                <div className="property-value">{mineral.locality || 'N/A'}</div>
+              </div>
             </div>
           </div>
 

@@ -24,6 +24,7 @@ export const eliteDangerousData = {
       inGameUse: "Rare material for high-tech station construction, valuable trade commodity",
       realWorldUse: "Rare collector gemstone, almost exclusively from California",
       rarity: "Very Rare",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/elite-dangerous/benitoite-gem-1.jpg",
       funFact: "Benitoite is rarer than diamond! Gem-quality material comes almost exclusively from one mine in California."
     },
@@ -40,6 +41,7 @@ export const eliteDangerousData = {
       inGameUse: "Asteroid mineral composition, shows authentic geology",
       realWorldUse: "Collector specimens showing natural occurrence",
       rarity: "Rare",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/elite-dangerous/benitoite-rock.jpg",
       funFact: "The blue benitoite, white natrolite, and neptunite (which shows reddish colors under bright light) together are sometimes called 'patriotic minerals' for their red, white, and blue colors!"
     },
@@ -56,6 +58,7 @@ export const eliteDangerousData = {
       inGameUse: "Manufactured station component, synthetic material production",
       realWorldUse: "Diamond simulant (before cubic zirconia), optical coatings, pigment",
       rarity: "Common (synthetic)",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/elite-dangerous/rutile-synthetic.jpg",
       funFact: "Synthetic rutile was used as a diamond substitute in the 1940s-50s but has 6x the 'fire' of diamond, making it look fake!"
     },
@@ -72,8 +75,9 @@ export const eliteDangerousData = {
       inGameUse: "Titanium extraction source for ship hulls and station construction",
       realWorldUse: "Titanium ore, pigment production (TiO₂ white paint), welding rod coatings",
       rarity: "Common",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/elite-dangerous/rutile-mineral.jpg",
-      funFact: "Almost all white paint uses titanium dioxide from rutile. It's the whitest, brightest pigment known!"
+      funFact: "Almost all modern white paint uses titanium dioxide from rutile. It's the whitest, brightest pigment known!"
     }
   ]
 };

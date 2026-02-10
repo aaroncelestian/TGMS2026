@@ -24,6 +24,7 @@ export const minecraftData = {
       inGameUse: "Decorative building block found in geodes, white colored stone",
       realWorldUse: "Construction (cement, lime), agriculture (soil treatment), glass manufacturing, pharmaceuticals",
       rarity: "Very Common",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/minecraft/calcite-gem.jpg",
       funFact: "Calcite is so common that it makes up about 4% of Earth's crust! The white cliffs of Dover are made almost entirely of calcite."
     },
@@ -40,6 +41,7 @@ export const minecraftData = {
       inGameUse: "Building material, decorative block in cave formations",
       realWorldUse: "Optical instruments (Iceland spar), fertilizer, construction aggregate",
       rarity: "Very Common",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/minecraft/calcite-mineral.jpg",
       funFact: "Clear calcite (Iceland spar) was used by Vikings for navigation—it can show the position of the sun even on cloudy days!"
     },
@@ -56,6 +58,7 @@ export const minecraftData = {
       inGameUse: "Enchanting table fuel, blue dye source, decorative block",
       realWorldUse: "Gemstone, pigment (ultramarine blue), ornamental carvings",
       rarity: "Uncommon",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/minecraft/lapis-lazuli-gem.jpg",
       funFact: "Ancient Egyptians ground lapis lazuli to make eyeshadow, and Renaissance painters paid more for ultramarine blue pigment than for gold!"
     },
@@ -72,6 +75,7 @@ export const minecraftData = {
       inGameUse: "Lapis lazuli ore, mining resource",
       realWorldUse: "Source for gemstones and ultramarine pigment",
       rarity: "Uncommon",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/minecraft/lapis-lazuli-rock-1.jpg",
       funFact: "Lapis lazuli has been mined in Afghanistan's Badakhshan province for over 6,000 years, making it one of the oldest mining operations in history!"
     },
@@ -88,6 +92,7 @@ export const minecraftData = {
       inGameUse: "Ore block that drops lapis lazuli gems",
       realWorldUse: "Source material for gems and pigments",
       rarity: "Uncommon",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/minecraft/lapis-lazuli-rock-2.jpg",
       funFact: "The best lapis lazuli comes from Afghanistan, where it's been mined for over 6,000 years!"
     },
@@ -104,6 +109,7 @@ export const minecraftData = {
       inGameUse: "Villager trading currency, crafting emerald blocks, beacon fuel",
       realWorldUse: "Precious gemstone, one of the most valuable gems per carat",
       rarity: "Rare",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/minecraft/emerald-gem.jpg",
       funFact: "Emeralds are actually rarer than diamonds! Most natural emeralds contain inclusions called 'jardin' (French for garden) that look like tiny plants."
     },
@@ -120,8 +126,9 @@ export const minecraftData = {
       inGameUse: "Found as ore in mountain biomes, drops raw emerald",
       realWorldUse: "Museum specimens, demonstrates geological context",
       rarity: "Rare",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/minecraft/emerald-mineral-1.jpg",
-      funFact: "Most emeralds form in metamorphic rocks like mica schist. Colombian emeralds are exceptional—they formed in sedimentary rocks, making them geologically unique!"
+      funFact: "Most emeralds form in metamorphic rocks like mica schist. Colombian emeralds are exceptional—they crystallized from hydrothermal fluids moving through sedimentary black shales, a geologically unique setting!"
     },
     {
       id: "emerald-mineral-2",
@@ -136,6 +143,7 @@ export const minecraftData = {
       inGameUse: "Raw emerald, villager trading currency",
       realWorldUse: "Precious gemstone, mineral specimen",
       rarity: "Rare",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/minecraft/emerald-mineral-2.jpg",
       funFact: "Emeralds are 20 times rarer than diamonds in nature, making them one of the most valuable gemstones!"
     },
@@ -152,8 +160,9 @@ export const minecraftData = {
       inGameUse: "Nether portal construction, blast-resistant building, enchanting tables",
       realWorldUse: "Surgical scalpel blades (sharper than steel), tools, arrowheads, decorative stone",
       rarity: "Common",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/minecraft/obsidian.jpg",
-      funFact: "Obsidian can be sharper than surgical steel! Modern surgeons sometimes use obsidian scalpel blades for delicate eye surgery."
+      funFact: "Obsidian can be knapped into blades sharper than surgical steel - with edges just a few molecules thick. Some surgeons experimented with obsidian scalpels for delicate procedures in the past, though they never became standard practice."
     },
     {
       id: "gold",
@@ -168,6 +177,7 @@ export const minecraftData = {
       inGameUse: "Tools, armor, powered rails, golden apples, Netherite ingredient",
       realWorldUse: "Jewelry, electronics (connectors), dental work, currency, space technology (radiation shield)",
       rarity: "Uncommon",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/minecraft/gold.jpg",
       funFact: "All the gold ever mined in human history would fit in a cube about 22 meters on each side! One ounce of gold can be beaten into a sheet covering 300 square feet."
     }

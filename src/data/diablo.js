@@ -24,6 +24,7 @@ export const diabloData = {
       inGameUse: "Socketable gem for lightning resistance, magic find enhancement",
       realWorldUse: "Gemstone jewelry, November birthstone",
       rarity: "Uncommon",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/diablo/yellow-topaz-gem.jpg",
       funFact: "Imperial topaz (golden yellow to pink) is the most valuable topaz variety and was named after the Russian royal family who claimed exclusive rights to it!"
     },
@@ -40,6 +41,7 @@ export const diabloData = {
       inGameUse: "Raw topaz gem, crafting material",
       realWorldUse: "Mineral specimens, source for cut gems",
       rarity: "Uncommon",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/diablo/yellow-topaz-mineral.jpg",
       funFact: "The largest cut topaz in the world is the Brazilian Princess, weighing 21,327 carats (about 9.4 pounds)!"
     },
@@ -56,6 +58,7 @@ export const diabloData = {
       inGameUse: "Socketable gem for cold resistance, mana boost",
       realWorldUse: "Precious gemstone, watch crystals, scientific instruments",
       rarity: "Rare",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/diablo/sapphire-mineral-2.jpg",
       funFact: "The Star of India, one of the world's largest star sapphires at 563 carats, was stolen from the American Museum of Natural History in 1964 and later recovered!"
     },
@@ -72,8 +75,9 @@ export const diabloData = {
       inGameUse: "Raw sapphire, high-value loot",
       realWorldUse: "Museum specimens, source for faceted gems",
       rarity: "Rare",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/diablo/sapphire-mineral-1.jpg",
-      funFact: "Sapphires come in every color except red—red corundum is called ruby! There are pink, yellow, green, and even colorless sapphires."
+      funFact: "Sapphires come in every color except red.  When it's red corundum is called ruby! There are pink, yellow, green, and even colorless sapphires."
     }
   ]
 };

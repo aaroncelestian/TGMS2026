@@ -24,6 +24,7 @@ export const astroneerData = {
       inGameUse: "Resource extraction, crafting material, zinc source",
       realWorldUse: "Primary zinc ore, gemstone (rare), semiconductor material",
       rarity: "Common (as ore), Rare (as gem)",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/astroneer/sphalerite-gem.jpg",
       funFact: "Faceted sphalerite has higher dispersion (fire) than diamond! However, it's rarely used in jewelry because it's too soft and cleaves easily."
     },
@@ -40,6 +41,7 @@ export const astroneerData = {
       inGameUse: "Zinc ore, mining resource, industrial material",
       realWorldUse: "Zinc metal production, mineral specimens",
       rarity: "Common",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/astroneer/sphalerite-mineral.jpg",
       funFact: "Sphalerite is the primary source of zinc, which is used to galvanize steel! About 13 million tons of zinc are produced from sphalerite each year."
     },
@@ -56,8 +58,9 @@ export const astroneerData = {
       inGameUse: "High-value resource, advanced technology component",
       realWorldUse: "Collector gemstone, optical research",
       rarity: "Uncommon",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/astroneer/titanite-gem-2.jpg",
-      funFact: "The name 'sphene' comes from the Greek word for wedge, referring to the crystal shape. It was renamed 'titanite' to reflect its titanium content."
+      funFact: "Titanite is found in rocks on Earth, the Moon, and in meteorites - making it one of the few minerals we've identified across multiple worlds."
     },
     {
       id: "titanite-mineral",
@@ -72,6 +75,7 @@ export const astroneerData = {
       inGameUse: "Titanium ore, mining discovery, space-age material",
       realWorldUse: "Mineral specimens, minor titanium source",
       rarity: "Uncommon",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/astroneer/titanite-mineral.jpg",
       funFact: "Titanite is found in rocks on Earth, the Moon, and in meteorites! It's one of the few minerals that can survive the extreme conditions of space."
     }

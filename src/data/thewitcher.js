@@ -24,6 +24,7 @@ export const theWitcherData = {
       inGameUse: "Alchemy ingredients, crafting materials, valuable trade goods",
       realWorldUse: "Luxury jewelry, particularly Tahitian black pearls",
       rarity: "Very Rare",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/the-witcher/pearl-black.jpg",
       funFact: "Natural black pearls can sell for $10,000-$20,000! Most 'black pearls' in jewelry are actually dyed."
     },
@@ -40,6 +41,7 @@ export const theWitcherData = {
       inGameUse: "Alchemy reagent, equipment upgrade material",
       realWorldUse: "Mabe pearl jewelry, decorative inlay",
       rarity: "Uncommon",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/the-witcher/pearl-white-blister.jpg",
       funFact: "Cleopatra supposedly dissolved a pearl in wine and drank it to prove Egypt's wealth to Marc Antony!"
     },
@@ -56,6 +58,7 @@ export const theWitcherData = {
       inGameUse: "Legendary crafting material, highest-tier alchemy ingredient",
       realWorldUse: "Ultra-rare collector gems, museum specimens",
       rarity: "Very Rare",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/the-witcher/pearl-abalone.jpg",
       funFact: "Abalone pearls can show blue, green, purple, pink, and silver simultaneously! A large one can be worth $100,000+."
     },
@@ -72,6 +75,7 @@ export const theWitcherData = {
       inGameUse: "Basic crafting component, blacksmithing material",
       realWorldUse: "Sulfuric acid production, iron ore (historically), decorative specimens",
       rarity: "Very Common",
+      locality: "N/A",
       imageUrl: "/TGMS2026/images/the-witcher/pyrite.jpg",
       funFact: "Pyrite's name comes from Greek 'pyr' (fire) because it sparks when struck! It fooled many gold prospectors."
     }
