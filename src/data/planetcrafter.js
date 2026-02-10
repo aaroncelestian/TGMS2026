@@ -24,7 +24,7 @@ export const planetCrafterData = {
       inGameUse: "Zeolite ore for DNA Manipulators, Gas Extractors, and Pulsar Quartz crafting",
       realWorldUse: "Water purification, ion exchange, catalysis, molecular sieves",
       rarity: "Uncommon",
-      locality: "N/A",
+      locality: "Poona, India",
       imageUrl: "/TGMS2026/images/planet-crafter/natrolite-gem.jpg",
       funFact: "In The Planet Crafter, zeolite emerges from the ground when trees grow - pushed up by roots in a beautiful mechanic that ties mineralogy to biological growth!"
     },
@@ -41,7 +41,7 @@ export const planetCrafterData = {
       inGameUse: "Represents the geological context of zeolite formation in volcanic caves",
       realWorldUse: "Radiation shielding, ion exchange, molecular sieves, nuclear cleanup",
       rarity: "Uncommon",
-      locality: "N/A",
+      locality: "Poona, India",
       imageUrl: "/TGMS2026/images/planet-crafter/heulandite-rock.jpg",
       funFact: "Heulandite loses 10% of its weight when heated to 350°C as water evaporates from its channels! The basalt connection is perfect for terraforming - basaltic volcanism is common on rocky planets."
     },
@@ -58,7 +58,7 @@ export const planetCrafterData = {
       inGameUse: "Shows zeolite diversity - the game correctly associates zeolites with gas separation and molecular manipulation",
       realWorldUse: "Molecular sieves, catalysis, ion exchange, collector specimens",
       rarity: "Rare",
-      locality: "N/A",
+      locality: "Poona, India",
       imageUrl: "/TGMS2026/images/planet-crafter/stellerite-rock.jpg",
       funFact: "Stellerite can contain up to 28 water molecules per formula unit - nearly half its weight is water! The game's zeolite appearing during Flora stage creates a poetic connection - stellerite looks like wheat."
     }
