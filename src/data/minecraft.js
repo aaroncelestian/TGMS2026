@@ -6,7 +6,7 @@ export const minecraftData = {
     developer: "Mojang Studios",
     releaseYear: 2011,
     totalMinerals: 11,
-    totalSpecimens: 10,
+    totalSpecimens: 7,
     diversityScore: "High",
     gameDescription: "In Minecraft, players mine 11 different ores and minerals including Coal, Iron, Copper, Gold, Redstone, Lapis Lazuli, Diamond, Emerald, Quartz, Nether Gold, and Ancient Debris. Mining is central to progression, with each mineral serving specific purposes from crafting tools and armor to enchanting and trading with villagers."
   },
@@ -63,40 +63,6 @@ export const minecraftData = {
       funFact: "Ancient Egyptians ground lapis lazuli to make eyeshadow, and Renaissance painters paid more for ultramarine blue pigment than for gold!"
     },
     {
-      id: "lapis-lazuli-rock-1",
-      name: "Lapis Lazuli (Rock)",
-      formula: "(Na,Ca)₈(AlSiO₄)₆(S,SO₄,Cl)₂",
-      specimenId: "21561",
-      type: "rock",
-      crystalSystem: "Metamorphic rock",
-      hardness: "5-6",
-      color: "Deep blue with pyrite inclusions",
-      description: "Lapis lazuli rock specimen showing the characteristic deep blue color with golden pyrite flecks. This metamorphic rock forms in contact zones.",
-      inGameUse: "Lapis lazuli ore, mining resource",
-      realWorldUse: "Source for gemstones and ultramarine pigment",
-      rarity: "Uncommon",
-      locality: "N/A",
-      imageUrl: "/TGMS2026/images/minecraft/lapis-lazuli-rock-1.jpg",
-      funFact: "Lapis lazuli has been mined in Afghanistan's Badakhshan province for over 6,000 years, making it one of the oldest mining operations in history!"
-    },
-    {
-      id: "lapis-lazuli-rock-2",
-      name: "Lapis Lazuli (Rough)",
-      formula: "(Na,Ca)₈(AlSiO₄)₆(S,SO₄,Cl)₂",
-      specimenId: "12344",
-      type: "rock",
-      crystalSystem: "Metamorphic rock",
-      hardness: "5-6",
-      color: "Blue with white calcite veins",
-      description: "Lapis in its natural state shows the complex mixture of lazurite, calcite (white), and pyrite (gold). Forms in marble during contact metamorphism.",
-      inGameUse: "Ore block that drops lapis lazuli gems",
-      realWorldUse: "Source material for gems and pigments",
-      rarity: "Uncommon",
-      locality: "N/A",
-      imageUrl: "/TGMS2026/images/minecraft/lapis-lazuli-rock-2.jpg",
-      funFact: "The best lapis lazuli comes from Afghanistan, where it's been mined for over 6,000 years!"
-    },
-    {
       id: "emerald-gem",
       name: "Emerald",
       formula: "Be₃Al₂Si₆O₁₈",
@@ -112,23 +78,6 @@ export const minecraftData = {
       locality: "N/A",
       imageUrl: "/TGMS2026/images/minecraft/emerald-gem.jpg",
       funFact: "Emeralds are actually rarer than diamonds! Most natural emeralds contain inclusions called 'jardin' (French for garden) that look like tiny plants."
-    },
-    {
-      id: "emerald-mineral-1",
-      name: "Emerald in Matrix",
-      formula: "Be₃Al₂Si₆O₁₈",
-      specimenId: "37596",
-      type: "mineral",
-      crystalSystem: "Hexagonal",
-      hardness: "7.5-8",
-      color: "Bright green crystals in host rock",
-      description: "Emerald crystals growing in their host rock (matrix), typically mica schist or carbonate rocks. Shows how emeralds naturally occur in metamorphic environments.",
-      inGameUse: "Found as ore in mountain biomes, drops raw emerald",
-      realWorldUse: "Museum specimens, demonstrates geological context",
-      rarity: "Rare",
-      locality: "N/A",
-      imageUrl: "/TGMS2026/images/minecraft/emerald-mineral-1.jpg",
-      funFact: "Most emeralds form in metamorphic rocks like mica schist. Colombian emeralds are exceptional—they crystallized from hydrothermal fluids moving through sedimentary black shales, a geologically unique setting!"
     },
     {
       id: "emerald-mineral-2",

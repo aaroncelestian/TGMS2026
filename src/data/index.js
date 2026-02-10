@@ -55,7 +55,7 @@ export {
 
 // Game list for navigation
 export const gameList = [
-  { id: 'minecraft', name: 'Minecraft', icon: '⛏️', specimens: 10 },
+  { id: 'minecraft', name: 'Minecraft', icon: '⛏️', specimens: 7 },
   { id: 'stardew-valley', name: 'Stardew Valley', icon: '🌾', specimens: 6 },
   { id: 'gta', name: 'GTA', icon: '💎', specimens: 5 },
   { id: 'wow', name: 'World of Warcraft', icon: '⚔️', specimens: 7 },
