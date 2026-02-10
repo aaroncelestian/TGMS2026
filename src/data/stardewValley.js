@@ -24,7 +24,7 @@ export const stardewValleyData = {
       inGameUse: "Museum donation, crafting material",
       realWorldUse: "Copper ore, ornamental stone, pigment source",
       rarity: "Common",
-      imageUrl: "/images/stardew/malachite.jpg",
+      imageUrl: "/TGMS2026/images/stardew-valley/malachite.jpg",
       funFact: "Ancient Egyptians ground malachite into powder for eye shadow and used it in amulets for protection."
     },
     {
@@ -40,7 +40,7 @@ export const stardewValleyData = {
       inGameUse: "Museum donation, rare mineral",
       realWorldUse: "Mineral specimens for collectors",
       rarity: "Rare",
-      imageUrl: "/images/stardew/neptunite.jpg",
+      imageUrl: "/TGMS2026/images/stardew-valley/neptunite.jpg",
       funFact: "Neptunite is almost exclusively found in a few locations in California, making it a highly sought-after collector's mineral."
     },
     {
@@ -56,7 +56,7 @@ export const stardewValleyData = {
       inGameUse: "Museum donation, geode mineral",
       realWorldUse: "Primary ore of strontium, used in fireworks and flares",
       rarity: "Uncommon",
-      imageUrl: "/images/stardew/celestine.jpg",
+      imageUrl: "/TGMS2026/images/stardew-valley/celestine.jpg",
       funFact: "The red color in emergency flares and fireworks comes from strontium extracted from celestine."
     },
     {
@@ -72,7 +72,7 @@ export const stardewValleyData = {
       inGameUse: "Museum donation",
       realWorldUse: "Drilling mud in oil/gas wells, medical imaging contrast agent",
       rarity: "Common",
-      imageUrl: "/images/stardew/baryte-gem.jpg",
+      imageUrl: "/TGMS2026/images/stardew-valley/baryte-gem.jpg",
       funFact: "You've probably swallowed baryte if you've ever had a barium x-ray examination at a hospital!"
     },
     {
@@ -88,7 +88,7 @@ export const stardewValleyData = {
       inGameUse: "Museum donation",
       realWorldUse: "Collector specimens, drilling industry",
       rarity: "Common",
-      imageUrl: "/images/stardew/baryte-rock.jpg",
+      imageUrl: "/TGMS2026/images/stardew-valley/baryte-rock.jpg",
       funFact: "Desert roses form when baryte crystallizes in sandy soil during evaporation in arid climates."
     },
     {
@@ -104,7 +104,7 @@ export const stardewValleyData = {
       inGameUse: "Museum donation, rare find",
       realWorldUse: "Refractory ceramics, gemstone",
       rarity: "Uncommon",
-      imageUrl: "/images/stardew/kyanite-gem.jpg",
+      imageUrl: "/TGMS2026/images/stardew-valley/kyanite-gem.jpg",
       funFact: "Kyanite has different hardness values depending on the direction you scratch it—4.5 in one direction, 7 in the other!"
     }
   ]

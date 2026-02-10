@@ -75,10 +75,25 @@ function App() {
       )}
 
       {/* Hero Section */}
-      <div className="hero">
+      <div 
+        className="hero"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(/TGMS2026/images/${currentGameId}/banner.jpg)`,
+          backgroundSize: 'contain',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
         <div className="hero-content">
-          <h1 className="game-logo">{gameInfo.name}</h1>
-          <p className="game-subtitle">{gameInfo.tagline}</p>
+          <div style={{
+            background: 'rgba(255, 255, 255, 0.25)',
+            padding: '2rem',
+            borderRadius: '12px',
+            backdropFilter: 'blur(8px)'
+          }}>
+            <h1 className="game-logo">{gameInfo.name}</h1>
+            <p className="game-subtitle">{gameInfo.tagline}</p>
+          </div>
         </div>
       </div>
 

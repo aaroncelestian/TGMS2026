@@ -6,7 +6,7 @@ export const baldursGateData = {
     developer: "BioWare / Larian Studios",
     releaseYear: 1998,
     totalMinerals: 3,
-    totalSpecimens: 7,
+    totalSpecimens: 4,
     diversityScore: "Low",
     gameDescription: "Baldur's Gate 3 features various gemstones as valuable treasure and spell components, following D&D 5th edition rules. The game includes gems like Black Opal, Turquoise, and Purple Garnet used in trading, enchantments, and quest rewards. Additionally, legendary ores like Mithral and Adamantine can be found in the Underdark for crafting powerful equipment at the Adamantine Forge."
   },
@@ -15,7 +15,7 @@ export const baldursGateData = {
       id: "black-opal-gem-1",
       name: "Black Opal",
       formula: "SiO₂·nH₂O",
-      specimenId: "8114",
+      specimenId: "38984",
       type: "gem",
       crystalSystem: "Amorphous",
       hardness: "5.5-6.5",
@@ -24,40 +24,24 @@ export const baldursGateData = {
       inGameUse: "Valuable trade good, spell component, quest item",
       realWorldUse: "Precious gemstone, jewelry, collector specimens",
       rarity: "Rare",
-      imageUrl: "/images/baldursgate/black-opal-gem-1.jpg",
-      funFact: "Black opals from Lightning Ridge, Australia can be worth more per carat than diamonds! The play-of-color is caused by microscopic silica spheres diffracting light."
+      imageUrl: "/TGMS2026/images/baldurs-gate/black-opal-gem-1.jpg",
+      funFact: "Virgin Valley, Nevada produces some of the world's most spectacular black opals! These opals formed in volcanic ash deposits and are known for their intense play-of-color, though they can be fragile due to their high water content."
     },
     {
       id: "black-opal-gem-2",
-      name: "Black Opal (Cabochon)",
+      name: "Black Opal 2",
       formula: "SiO₂·nH₂O",
-      specimenId: "21894",
+      specimenId: "38984",
       type: "gem",
       crystalSystem: "Amorphous",
       hardness: "5.5-6.5",
-      color: "Dark with red and green fire",
-      description: "Polished black opal cabochon showing intense play-of-color. The dark background makes the color flashes more dramatic and valuable.",
+      color: "Black with vibrant play-of-color",
+      description: "Black opal from Virgin Valley, Nevada showing spectacular play-of-color. Virgin Valley opals are unique volcanic opals formed in ash beds, displaying some of the most intense color flashes found in any opal.",
       inGameUse: "High-value treasure, enchantment material",
-      realWorldUse: "Fine jewelry, investment gemstone",
+      realWorldUse: "Fine jewelry, investment gemstone, collector specimens",
       rarity: "Rare",
-      imageUrl: "/images/baldursgate/black-opal-gem-2.jpg",
-      funFact: "Opals contain up to 20% water! They can crack if they dry out too quickly, which is why jewelers sometimes store them in water."
-    },
-    {
-      id: "black-opal-rock",
-      name: "Black Opal in Matrix",
-      formula: "SiO₂·nH₂O",
-      specimenId: "12244",
-      type: "rock",
-      crystalSystem: "Amorphous",
-      hardness: "5.5-6.5",
-      color: "Black opal veins in ironstone",
-      description: "Black opal in its natural host rock (ironstone matrix). Shows how opal forms in sedimentary environments, filling cavities and cracks.",
-      inGameUse: "Raw gemstone ore, mining discovery",
-      realWorldUse: "Source material for cut gems, museum specimens",
-      rarity: "Rare",
-      imageUrl: "/images/baldursgate/black-opal-rock.jpg",
-      funFact: "Black opal forms in ancient sedimentary rocks when silica-rich water seeps through cracks and slowly evaporates over millions of years."
+      imageUrl: "/TGMS2026/images/baldurs-gate/black-opal-gem-2.jpg",
+      funFact: "Virgin Valley opals can contain up to 20% water! They're more fragile than Australian opals and can crack if they dry out too quickly, which is why some collectors store them in water or mineral oil."
     },
     {
       id: "turquoise-gem",
@@ -72,7 +56,7 @@ export const baldursGateData = {
       inGameUse: "Trade gem, decorative item, spell component",
       realWorldUse: "Gemstone jewelry, ornamental carvings, traditional medicine",
       rarity: "Uncommon",
-      imageUrl: "/images/baldursgate/turquoise-gem.jpg",
+      imageUrl: "/TGMS2026/images/baldurs-gate/turquoise-gem.jpg",
       funFact: "Ancient Egyptians mined turquoise in the Sinai Peninsula over 5,000 years ago! The name comes from 'Turkish stone' because it was traded through Turkey."
     },
     {
@@ -88,7 +72,7 @@ export const baldursGateData = {
       inGameUse: "Raw gemstone material, mining loot",
       realWorldUse: "Source for cut gems, traditional Native American jewelry",
       rarity: "Uncommon",
-      imageUrl: "/images/baldursgate/turquoise-rock.jpg",
+      imageUrl: "/TGMS2026/images/baldurs-gate/turquoise-rock.jpg",
       funFact: "Turquoise can change color over time! Body oils, cosmetics, and sunlight can alter its blue color to green."
     },
     {
@@ -104,24 +88,8 @@ export const baldursGateData = {
       inGameUse: "Valuable gem, enchantment component, quest reward",
       realWorldUse: "Rare gemstone, collector's item",
       rarity: "Rare",
-      imageUrl: "/images/baldursgate/purple-garnet-gem-1.jpg",
+      imageUrl: "/TGMS2026/images/baldurs-gate/purple-garnet-gem-1.jpg",
       funFact: "Purple garnets are extremely rare! Most garnets are red, and the purple color comes from trace amounts of chromium and vanadium."
-    },
-    {
-      id: "purple-garnet-gem-2",
-      name: "Purple Garnet (Faceted)",
-      formula: "Mg₃Al₂(SiO₄)₃",
-      specimenId: "33431",
-      type: "gem",
-      crystalSystem: "Cubic",
-      hardness: "7-7.5",
-      color: "Deep purple-red",
-      description: "Faceted purple garnet showing excellent clarity and color. The high refractive index of garnet gives it exceptional brilliance when cut.",
-      inGameUse: "High-value treasure, magical focus item",
-      realWorldUse: "Fine jewelry, investment gemstone",
-      rarity: "Rare",
-      imageUrl: "/images/baldursgate/purple-garnet-gem-2.jpg",
-      funFact: "Garnets have been used as gemstones for over 5,000 years! Ancient Egyptians used them as inlays in jewelry and carvings."
     }
   ]
 };

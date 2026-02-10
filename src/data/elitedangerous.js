@@ -6,7 +6,7 @@ export const eliteDangerousData = {
     developer: "Frontier Developments",
     releaseYear: 2014,
     totalMinerals: 33,
-    totalSpecimens: 6,
+    totalSpecimens: 4,
     diversityScore: "High",
     gameDescription: "Elite Dangerous features 33 distinct mineral commodities that can be mined from asteroids and planetary rings. Players use specialized mining equipment to extract valuable materials like Painite, Void Opals, and Low Temperature Diamonds. Mining is a core profession in the game's economy, with minerals used for trading, crafting, and engineering ship upgrades."
   },
@@ -24,24 +24,8 @@ export const eliteDangerousData = {
       inGameUse: "Rare material for high-tech station construction, valuable trade commodity",
       realWorldUse: "Rare collector gemstone, almost exclusively from California",
       rarity: "Very Rare",
-      imageUrl: "/images/elitedangerous/benitoite-gem-1.jpg",
+      imageUrl: "/TGMS2026/images/elite-dangerous/benitoite-gem-1.jpg",
       funFact: "Benitoite is rarer than diamond! Gem-quality material comes almost exclusively from one mine in California."
-    },
-    {
-      id: "benitoite-gem-2",
-      name: "Benitoite (Large Crystal)",
-      formula: "BaTiSi₃O₉",
-      specimenId: "63278",
-      type: "gem",
-      crystalSystem: "Hexagonal",
-      hardness: "6-6.5",
-      color: "Intense blue",
-      description: "Large gem-quality benitoite crystal. Under UV light, benitoite fluoresces bright blue-white, a spectacular identifying feature. Crystals over 1 carat are extremely rare.",
-      inGameUse: "High-value mining discovery",
-      realWorldUse: "Museum specimens, very rare in jewelry due to scarcity",
-      rarity: "Very Rare",
-      imageUrl: "/images/elitedangerous/benitoite-gem-2.jpg",
-      funFact: "When the California mine closed in 2005, benitoite prices skyrocketed. It's considered one of the rarest gemstones on Earth!"
     },
     {
       id: "benitoite-rock",
@@ -56,7 +40,7 @@ export const eliteDangerousData = {
       inGameUse: "Asteroid mineral composition, shows authentic geology",
       realWorldUse: "Collector specimens showing natural occurrence",
       rarity: "Rare",
-      imageUrl: "/images/elitedangerous/benitoite-rock.jpg",
+      imageUrl: "/TGMS2026/images/elite-dangerous/benitoite-rock.jpg",
       funFact: "The blue benitoite, white natrolite, and neptunite (which shows reddish colors under bright light) together are sometimes called 'patriotic minerals' for their red, white, and blue colors!"
     },
     {
@@ -72,24 +56,8 @@ export const eliteDangerousData = {
       inGameUse: "Manufactured station component, synthetic material production",
       realWorldUse: "Diamond simulant (before cubic zirconia), optical coatings, pigment",
       rarity: "Common (synthetic)",
-      imageUrl: "/images/elitedangerous/rutile-synthetic.jpg",
+      imageUrl: "/TGMS2026/images/elite-dangerous/rutile-synthetic.jpg",
       funFact: "Synthetic rutile was used as a diamond substitute in the 1940s-50s but has 6x the 'fire' of diamond, making it look fake!"
-    },
-    {
-      id: "rutile-twin",
-      name: "Rutile (Twinned Crystal)",
-      formula: "TiO₂",
-      specimenId: "51838",
-      type: "min-twin",
-      crystalSystem: "Tetragonal",
-      hardness: "6-6.5",
-      color: "Red-brown, black",
-      description: "Natural rutile forming characteristic elbow-shaped or knee-shaped twins. Rutile often forms golden needle-like inclusions in quartz (rutilated quartz) highly valued by collectors.",
-      inGameUse: "Natural asteroid mineral, advanced materials source",
-      realWorldUse: "Primary ore of titanium, pigment (titanium white), rutilated quartz gems",
-      rarity: "Common",
-      imageUrl: "/images/elitedangerous/rutile-twin.jpg",
-      funFact: "Rutilated quartz with golden rutile needles is called 'Venus hair stone' or 'Cupid's darts' in ancient folklore!"
     },
     {
       id: "rutile-mineral",
@@ -104,7 +72,7 @@ export const eliteDangerousData = {
       inGameUse: "Titanium extraction source for ship hulls and station construction",
       realWorldUse: "Titanium ore, pigment production (TiO₂ white paint), welding rod coatings",
       rarity: "Common",
-      imageUrl: "/images/elitedangerous/rutile-mineral.jpg",
+      imageUrl: "/TGMS2026/images/elite-dangerous/rutile-mineral.jpg",
       funFact: "Almost all white paint uses titanium dioxide from rutile. It's the whitest, brightest pigment known!"
     }
   ]

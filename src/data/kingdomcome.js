@@ -24,7 +24,7 @@ export const kingdomComeData = {
       inGameUse: "Valuable trade item, wealth indicator, quest reward",
       realWorldUse: "Gemstone jewelry, industrial abrasive",
       rarity: "Uncommon",
-      imageUrl: "/images/kingdomcome/blue-topaz-gem.jpg",
+      imageUrl: "/TGMS2026/images/kingdomcome/blue-topaz-gem.jpg",
       funFact: "Most blue topaz is actually colorless topaz that's been irradiated and heat-treated! Natural blue topaz is quite rare and usually pale."
     },
     {
@@ -40,7 +40,7 @@ export const kingdomComeData = {
       inGameUse: "Raw gemstone, mining discovery",
       realWorldUse: "Mineral specimens, source for cut gems",
       rarity: "Uncommon",
-      imageUrl: "/images/kingdomcome/blue-topaz-rock.jpg",
+      imageUrl: "/TGMS2026/images/kingdomcome/blue-topaz-rock.jpg",
       funFact: "The name 'topaz' may come from the Sanskrit word 'tapas' meaning fire, or from the Greek island Topazios in the Red Sea."
     },
     {
@@ -56,7 +56,7 @@ export const kingdomComeData = {
       inGameUse: "Precious gemstone, trade good, symbol of nobility",
       realWorldUse: "Fine gemstone jewelry, collector specimens",
       rarity: "Uncommon",
-      imageUrl: "/images/kingdomcome/aquamarine-gem.jpg",
+      imageUrl: "/TGMS2026/images/kingdomcome/aquamarine-gem.jpg",
       funFact: "Ancient Romans believed aquamarine came from the treasure chests of mermaids! Sailors carried it as a talisman against drowning."
     },
     {
@@ -72,7 +72,7 @@ export const kingdomComeData = {
       inGameUse: "Natural crystal specimen, raw gemstone",
       realWorldUse: "Museum specimens, source for faceted gems",
       rarity: "Uncommon",
-      imageUrl: "/images/kingdomcome/aquamarine-mineral.jpg",
+      imageUrl: "/TGMS2026/images/kingdomcome/aquamarine-mineral.jpg",
       funFact: "The largest aquamarine crystal ever found weighed 243 pounds and was discovered in Brazil in 1910!"
     }
   ]

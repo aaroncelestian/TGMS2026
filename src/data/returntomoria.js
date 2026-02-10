@@ -24,7 +24,7 @@ export const returnToMoriaData = {
       inGameUse: "Light source, crafting material, decorative gem",
       realWorldUse: "Gemstone jewelry, Oregon state gemstone",
       rarity: "Uncommon",
-      imageUrl: "/images/returntomoria/sunstone-gem-1.jpg",
+      imageUrl: "/TGMS2026/images/return-to-moria/sunstone-gem-1.jpg",
       funFact: "Vikings may have used sunstone (Iceland spar calcite) for navigation, but the aventurescent feldspar sunstone we know today was discovered in Oregon!"
     },
     {
@@ -40,7 +40,7 @@ export const returnToMoriaData = {
       inGameUse: "Polished gem, trade good, enchantment focus",
       realWorldUse: "Jewelry, collector specimens",
       rarity: "Uncommon",
-      imageUrl: "/images/returntomoria/sunstone-gem-2.jpg",
+      imageUrl: "/TGMS2026/images/return-to-moria/sunstone-gem-2.jpg",
       funFact: "Oregon sunstone is unique because it contains copper inclusions, while most other sunstones contain iron-based minerals!"
     },
     {
@@ -56,7 +56,7 @@ export const returnToMoriaData = {
       inGameUse: "Dwarven artifact, decorative item, quest object",
       realWorldUse: "Ornamental carvings, art objects",
       rarity: "Uncommon",
-      imageUrl: "/images/returntomoria/sunstone-carving.jpg",
+      imageUrl: "/TGMS2026/images/return-to-moria/sunstone-carving.jpg",
       funFact: "The largest sunstone ever found in Oregon weighed over 5 pounds and was discovered in 2011!"
     },
     {
@@ -72,7 +72,7 @@ export const returnToMoriaData = {
       inGameUse: "Navigation aid, magical gem, crafting component",
       realWorldUse: "Gemstone jewelry, optical filters",
       rarity: "Uncommon",
-      imageUrl: "/images/returntomoria/iolite-gem.jpg",
+      imageUrl: "/TGMS2026/images/return-to-moria/iolite-gem.jpg",
       funFact: "Vikings may have used iolite's pleochroism to navigate on cloudy days—it can show the position of the sun even when it's hidden!"
     },
     {
@@ -88,7 +88,7 @@ export const returnToMoriaData = {
       inGameUse: "Valuable gem, currency, crafting material",
       realWorldUse: "Gemstone jewelry, November birthstone",
       rarity: "Uncommon",
-      imageUrl: "/images/returntomoria/citrine-gem.jpg",
+      imageUrl: "/TGMS2026/images/return-to-moria/citrine-gem.jpg",
       funFact: "The name 'citrine' comes from the French word 'citron' meaning lemon! Natural citrine is much paler than the deep orange heat-treated variety."
     },
     {
@@ -104,7 +104,7 @@ export const returnToMoriaData = {
       inGameUse: "Raw citrine, mining discovery, dwarven treasure",
       realWorldUse: "Mineral specimens, source for cut gems",
       rarity: "Uncommon",
-      imageUrl: "/images/returntomoria/citrine-mineral.jpg",
+      imageUrl: "/TGMS2026/images/return-to-moria/citrine-mineral.jpg",
       funFact: "The largest faceted citrine in the world is the Malaga, weighing 20,200 carats (about 8.8 pounds)!"
     }
   ]

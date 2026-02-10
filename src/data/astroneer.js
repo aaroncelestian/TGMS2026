@@ -6,7 +6,7 @@ export const astroneerData = {
     developer: "System Era Softworks",
     releaseYear: 2016,
     totalMinerals: 15,
-    totalSpecimens: 5,
+    totalSpecimens: 4,
     diversityScore: "High",
     gameDescription: "Astroneer features 15 natural resources found across different planets, including Sphalerite, Malachite, Wolframite, Hematite, and the mysterious Astronium. Players mine these materials using terrain tools and process them through smelters and refineries to create base components, vehicles, and equipment for interplanetary exploration."
   },
@@ -24,7 +24,7 @@ export const astroneerData = {
       inGameUse: "Resource extraction, crafting material, zinc source",
       realWorldUse: "Primary zinc ore, gemstone (rare), semiconductor material",
       rarity: "Common (as ore), Rare (as gem)",
-      imageUrl: "/images/astroneer/sphalerite-gem.jpg",
+      imageUrl: "/TGMS2026/images/astroneer/sphalerite-gem.jpg",
       funFact: "Faceted sphalerite has higher dispersion (fire) than diamond! However, it's rarely used in jewelry because it's too soft and cleaves easily."
     },
     {
@@ -40,24 +40,8 @@ export const astroneerData = {
       inGameUse: "Zinc ore, mining resource, industrial material",
       realWorldUse: "Zinc metal production, mineral specimens",
       rarity: "Common",
-      imageUrl: "/images/astroneer/sphalerite-mineral.jpg",
+      imageUrl: "/TGMS2026/images/astroneer/sphalerite-mineral.jpg",
       funFact: "Sphalerite is the primary source of zinc, which is used to galvanize steel! About 13 million tons of zinc are produced from sphalerite each year."
-    },
-    {
-      id: "titanite-gem-1",
-      name: "Titanite (Sphene)",
-      formula: "CaTiSiO₅",
-      specimenId: "13808",
-      type: "gem",
-      crystalSystem: "Monoclinic",
-      hardness: "5-5.5",
-      color: "Yellow-green to brown",
-      description: "Calcium titanium silicate with exceptional brilliance and fire. Also called sphene. In Astroneer, titanite represents titanium-bearing minerals valuable for space technology.",
-      inGameUse: "Titanium source, advanced crafting material, rare resource",
-      realWorldUse: "Titanium ore (minor), gemstone, mineral specimens",
-      rarity: "Uncommon",
-      imageUrl: "/images/astroneer/titanite-gem-1.jpg",
-      funFact: "Titanite has higher dispersion than diamond, creating incredible rainbow flashes! It's a collector's gemstone because it's too soft for everyday jewelry."
     },
     {
       id: "titanite-gem-2",
@@ -72,7 +56,7 @@ export const astroneerData = {
       inGameUse: "High-value resource, advanced technology component",
       realWorldUse: "Collector gemstone, optical research",
       rarity: "Uncommon",
-      imageUrl: "/images/astroneer/titanite-gem-2.jpg",
+      imageUrl: "/TGMS2026/images/astroneer/titanite-gem-2.jpg",
       funFact: "The name 'sphene' comes from the Greek word for wedge, referring to the crystal shape. It was renamed 'titanite' to reflect its titanium content."
     },
     {
@@ -88,7 +72,7 @@ export const astroneerData = {
       inGameUse: "Titanium ore, mining discovery, space-age material",
       realWorldUse: "Mineral specimens, minor titanium source",
       rarity: "Uncommon",
-      imageUrl: "/images/astroneer/titanite-mineral.jpg",
+      imageUrl: "/TGMS2026/images/astroneer/titanite-mineral.jpg",
       funFact: "Titanite is found in rocks on Earth, the Moon, and in meteorites! It's one of the few minerals that can survive the extreme conditions of space."
     }
   ]

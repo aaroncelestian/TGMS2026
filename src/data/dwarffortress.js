@@ -24,7 +24,7 @@ export const dwarfFortressData = {
       inGameUse: "Glass-making, gem cutting, decorative stone, trade good",
       realWorldUse: "Optical instruments, electronics (oscillators), gemstone",
       rarity: "Common",
-      imageUrl: "/images/dwarffortress/quartz-gem.jpg",
+      imageUrl: "/TGMS2026/images/dwarf-fortress/quartz-gem.jpg",
       funFact: "Ancient civilizations believed rock crystal was ice frozen so hard it would never melt! The word 'crystal' comes from the Greek 'krystallos' meaning ice."
     },
     {
@@ -40,7 +40,7 @@ export const dwarfFortressData = {
       inGameUse: "Raw quartz, mining yield, fortress decoration",
       realWorldUse: "Mineral specimens, source for industrial quartz",
       rarity: "Very Common",
-      imageUrl: "/images/dwarffortress/quartz-mineral.jpg",
+      imageUrl: "/TGMS2026/images/dwarf-fortress/quartz-mineral.jpg",
       funFact: "Quartz makes up about 12% of Earth's land surface! It's found in almost every geological environment and rock type."
     },
     {
@@ -56,7 +56,7 @@ export const dwarfFortressData = {
       inGameUse: "Building stone, decorative material, carving medium",
       realWorldUse: "Ornamental stone, asbestos source (chrysotile variety), architectural material",
       rarity: "Common",
-      imageUrl: "/images/dwarffortress/serpentine-rock.jpg",
+      imageUrl: "/TGMS2026/images/dwarf-fortress/serpentine-rock.jpg",
       funFact: "Serpentine is California's state rock! It forms when oceanic crust is altered by water, and it's often found in areas with tectonic activity."
     }
   ]

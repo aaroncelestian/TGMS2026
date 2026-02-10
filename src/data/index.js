@@ -57,17 +57,17 @@ export {
 export const gameList = [
   { id: 'minecraft', name: 'Minecraft', icon: '⛏️', specimens: 10 },
   { id: 'stardew-valley', name: 'Stardew Valley', icon: '🌾', specimens: 6 },
-  { id: 'gta', name: 'GTA', icon: '💎', specimens: 7 },
+  { id: 'gta', name: 'GTA', icon: '💎', specimens: 5 },
   { id: 'wow', name: 'World of Warcraft', icon: '⚔️', specimens: 7 },
   { id: 'zelda', name: 'The Legend of Zelda', icon: '🗡️', specimens: 4 },
   { id: 'final-fantasy', name: 'Final Fantasy', icon: '✨', specimens: 6 },
-  { id: 'elite-dangerous', name: 'Elite Dangerous', icon: '🚀', specimens: 6 },
-  { id: 'the-witcher', name: 'The Witcher', icon: '🐺', specimens: 6 },
-  { id: 'baldurs-gate', name: "Baldur's Gate", icon: '🎲', specimens: 7 },
+  { id: 'elite-dangerous', name: 'Elite Dangerous', icon: '🚀', specimens: 4 },
+  { id: 'the-witcher', name: 'The Witcher', icon: '🐺', specimens: 4 },
+  { id: 'baldurs-gate', name: "Baldur's Gate", icon: '🎲', specimens: 4 },
   { id: 'kingdom-come', name: 'Kingdom Come: Deliverance', icon: '🏰', specimens: 4 },
-  { id: 'diablo', name: 'Diablo', icon: '🔥', specimens: 5 },
+  { id: 'diablo', name: 'Diablo', icon: '🔥', specimens: 4 },
   { id: 'elder-scrolls', name: 'The Elder Scrolls', icon: '🐉', specimens: 2 },
   { id: 'return-to-moria', name: 'Return to Moria', icon: '⚒️', specimens: 6 },
   { id: 'dwarf-fortress', name: 'Dwarf Fortress', icon: '🏔️', specimens: 3 },
-  { id: 'astroneer', name: 'Astroneer', icon: '🌌', specimens: 5 }
+  { id: 'astroneer', name: 'Astroneer', icon: '🌌', specimens: 4 }
 ];

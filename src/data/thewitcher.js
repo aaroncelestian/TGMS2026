@@ -6,7 +6,7 @@ export const theWitcherData = {
     developer: "CD Projekt Red",
     releaseYear: 2007,
     totalMinerals: 24,
-    totalSpecimens: 6,
+    totalSpecimens: 4,
     diversityScore: "High",
     gameDescription: "The Witcher 3 features approximately 24 alchemy minerals including Phosphorus, Sulfur, Quicksilver, and Saltpeter. These materials are gathered from the environment and monster loot, used primarily in alchemy for crafting potions, oils, and bombs. The game also includes a unique pearl collection system with various rare pearls found in coastal areas."
   },
@@ -24,24 +24,8 @@ export const theWitcherData = {
       inGameUse: "Alchemy ingredients, crafting materials, valuable trade goods",
       realWorldUse: "Luxury jewelry, particularly Tahitian black pearls",
       rarity: "Very Rare",
-      imageUrl: "/images/thewitcher/pearl-black.jpg",
+      imageUrl: "/TGMS2026/images/the-witcher/pearl-black.jpg",
       funFact: "Natural black pearls can sell for $10,000-$20,000! Most 'black pearls' in jewelry are actually dyed."
-    },
-    {
-      id: "pearl-pink-fingers",
-      name: "Pearl (Pink Fingers)",
-      formula: "CaCO₃ (biogenic)",
-      specimenId: "40910",
-      type: "gem",
-      crystalSystem: "Aragonite/Calcite (organic)",
-      hardness: "2.5-4.5",
-      color: "Pink with finger-like projections",
-      description: "Baroque pearl with unusual finger-like protrusions. Baroque pearls are irregularly shaped, each one unique. Pink pearls get their color from the mollusk's mantle tissue.",
-      inGameUse: "Rare crafting component, valuable loot",
-      realWorldUse: "Unique jewelry pieces, collector items",
-      rarity: "Rare",
-      imageUrl: "/images/thewitcher/pearl-pink-fingers.jpg",
-      funFact: "Baroque pearls were once considered defective but are now prized for their unique organic shapes!"
     },
     {
       id: "pearl-white-blister",
@@ -56,7 +40,7 @@ export const theWitcherData = {
       inGameUse: "Alchemy reagent, equipment upgrade material",
       realWorldUse: "Mabe pearl jewelry, decorative inlay",
       rarity: "Uncommon",
-      imageUrl: "/images/thewitcher/pearl-white-blister.jpg",
+      imageUrl: "/TGMS2026/images/the-witcher/pearl-white-blister.jpg",
       funFact: "Cleopatra supposedly dissolved a pearl in wine and drank it to prove Egypt's wealth to Marc Antony!"
     },
     {
@@ -72,24 +56,8 @@ export const theWitcherData = {
       inGameUse: "Legendary crafting material, highest-tier alchemy ingredient",
       realWorldUse: "Ultra-rare collector gems, museum specimens",
       rarity: "Very Rare",
-      imageUrl: "/images/thewitcher/pearl-abalone.jpg",
+      imageUrl: "/TGMS2026/images/the-witcher/pearl-abalone.jpg",
       funFact: "Abalone pearls can show blue, green, purple, pink, and silver simultaneously! A large one can be worth $100,000+."
-    },
-    {
-      id: "pearl-pink-conch",
-      name: "Pearl (Pink Conch)",
-      formula: "CaCO₃ (biogenic)",
-      specimenId: "40907",
-      type: "gem",
-      crystalSystem: "Aragonite/Calcite (organic)",
-      hardness: "2.5-4.5",
-      color: "Pink with flame pattern",
-      description: "Non-nacreous pearl from queen conch. Unlike typical pearls, conch pearls have a porcelain-like surface with chatoyant 'flame' patterns. Cannot be cultured, only natural.",
-      inGameUse: "Rare witcher gear enhancement, valuable trading commodity",
-      realWorldUse: "Ultra-rare gemstones (only ~2,000 gem-quality found per year)",
-      rarity: "Extremely Rare",
-      imageUrl: "/images/thewitcher/pearl-pink-conch.jpg",
-      funFact: "Conch pearls have sold for over $15,000 per carat! They're found in the Caribbean while eating conch."
     },
     {
       id: "pyrite",
@@ -104,7 +72,7 @@ export const theWitcherData = {
       inGameUse: "Basic crafting component, blacksmithing material",
       realWorldUse: "Sulfuric acid production, iron ore (historically), decorative specimens",
       rarity: "Very Common",
-      imageUrl: "/images/thewitcher/pyrite.jpg",
+      imageUrl: "/TGMS2026/images/the-witcher/pyrite.jpg",
       funFact: "Pyrite's name comes from Greek 'pyr' (fire) because it sparks when struck! It fooled many gold prospectors."
     }
   ]

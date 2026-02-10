@@ -24,7 +24,7 @@ export const wowData = {
       inGameUse: "Jewelcrafting material, socket gems for gear enhancement",
       realWorldUse: "Gemstone (August birthstone), sometimes found in meteorites",
       rarity: "Uncommon",
-      imageUrl: "/images/wow/peridot-gem.jpg",
+      imageUrl: "/TGMS2026/images/wow/peridot-gem.jpg",
       funFact: "Peridot is found in meteorites! Ancient Egyptians called it the 'gem of the sun' and believed it protected against nightmares."
     },
     {
@@ -40,7 +40,7 @@ export const wowData = {
       inGameUse: "Raw gem material from mining nodes",
       realWorldUse: "Refractory sand (high-temperature applications), gems, indicator of mantle composition",
       rarity: "Common",
-      imageUrl: "/images/wow/peridot-mineral.jpg",
+      imageUrl: "/TGMS2026/images/wow/peridot-mineral.jpg",
       funFact: "Olivine makes up most of the upper 250 miles of Earth. It's also found on the Moon, Mars, and in comets!"
     },
     {
@@ -56,7 +56,7 @@ export const wowData = {
       inGameUse: "Jewelcrafting gem providing strength or stamina bonuses",
       realWorldUse: "Gemstone jewelry, collector specimens",
       rarity: "Uncommon",
-      imageUrl: "/images/wow/garnet-spess-1.jpg",
+      imageUrl: "/TGMS2026/images/wow/garnet-spess-1.jpg",
       funFact: "The famous 'Mandarin garnets' from Namibia are spessartines so bright orange they revolutionized the gem market in the 1990s!"
     },
     {
@@ -72,7 +72,7 @@ export const wowData = {
       inGameUse: "Processed gem for high-level gear socketing",
       realWorldUse: "Fine jewelry, particularly popular in designer pieces",
       rarity: "Uncommon",
-      imageUrl: "/images/wow/garnet-spess-2.jpg",
+      imageUrl: "/TGMS2026/images/wow/garnet-spess-2.jpg",
       funFact: "Spessartine garnets can show a color-change effect under different lighting, appearing more red in incandescent light!"
     },
     {
@@ -88,7 +88,7 @@ export const wowData = {
       inGameUse: "Rare quality crafting material",
       realWorldUse: "Museum specimens, cut into multiple gems",
       rarity: "Rare",
-      imageUrl: "/images/wow/garnet-spess-3.jpg",
+      imageUrl: "/TGMS2026/images/wow/garnet-spess-3.jpg",
       funFact: "Garnet crystals are so well-formed they were used as ball bearings in early machinery!"
     },
     {
@@ -104,7 +104,7 @@ export const wowData = {
       inGameUse: "Represents unprocessed garnet ore",
       realWorldUse: "Shows geological context, educational specimens",
       rarity: "Common",
-      imageUrl: "/images/wow/garnet-rock.jpg",
+      imageUrl: "/TGMS2026/images/wow/garnet-rock.jpg",
       funFact: "Geologists use garnets as 'geothermometers' to calculate the temperature and pressure conditions during metamorphism!"
     },
     {
@@ -120,7 +120,7 @@ export const wowData = {
       inGameUse: "Rare hybrid gem providing combined stat bonuses",
       realWorldUse: "Unique gemstone for jewelry, particularly popular for designer cuts",
       rarity: "Rare",
-      imageUrl: "/images/wow/ametrine.jpg",
+      imageUrl: "/TGMS2026/images/wow/ametrine.jpg",
       funFact: "Legend says the Anahi mine was given as a dowry when a Spanish conquistador married a Bolivian princess in the 1600s!"
     }
   ]

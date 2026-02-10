@@ -6,7 +6,7 @@ export const gtaData = {
     developer: "Rockstar Games",
     releaseYear: 1997,
     totalMinerals: 2,
-    totalSpecimens: 7,
+    totalSpecimens: 5,
     diversityScore: "Low",
     gameDescription: "Grand Theft Auto does not feature a mining or mineral-gathering system. However, diamonds and rubies appear as ultimate luxury items in heists and jewelry stores, representing wealth and high-stakes crime. These 2 precious gem types serve as narrative symbols of the criminal underworld's pursuit of fortune."
   },
@@ -24,40 +24,8 @@ export const gtaData = {
       inGameUse: "High-value heist target (Casino Heist diamonds worth $3.6M), luxury item",
       realWorldUse: "Gemstone jewelry, industrial cutting/drilling, thermal conductors, semiconductors",
       rarity: "Rare (as gemstone)",
-      imageUrl: "/images/gta/diamond-earrings.jpg",
+      imageUrl: "/TGMS2026/images/gta/diamond-earrings.jpg",
       funFact: "The GTA Online Casino Heist diamond haul would weigh about 5 pounds in real life!"
-    },
-    {
-      id: "diamond-rough-1",
-      name: "Diamond (Rough)",
-      formula: "C",
-      specimenId: "55030",
-      type: "rough",
-      crystalSystem: "Cubic",
-      hardness: "10",
-      color: "Colorless to yellow",
-      description: "Uncut diamond crystal showing natural octahedral form. Most diamonds require cutting to reveal their brilliance. Only about 20% of mined diamonds are gem quality.",
-      inGameUse: "Represents unprocessed heist loot",
-      realWorldUse: "Cut into gemstones, industrial abrasives, scientific instruments",
-      rarity: "Rare",
-      imageUrl: "/images/gta/diamond-rough-1.jpg",
-      funFact: "Diamonds are 1-3 billion years old, formed 100+ miles deep in Earth's mantle, then brought to the surface by explosive volcanic eruptions!"
-    },
-    {
-      id: "diamond-rough-2",
-      name: "Diamond (Large Rough)",
-      formula: "C",
-      specimenId: "55747",
-      type: "rough",
-      crystalSystem: "Cubic",
-      hardness: "10",
-      color: "Pale yellow",
-      description: "Large uncut diamond crystal. The biggest diamonds can be worth tens of millions. The Cullinan Diamond (3,106 carats rough) was cut into 9 major stones for the British Crown Jewels.",
-      inGameUse: "Symbol of ultimate wealth in heist missions",
-      realWorldUse: "Either cut into multiple smaller gems or preserved as museum specimens",
-      rarity: "Very Rare",
-      imageUrl: "/images/gta/diamond-rough-2.jpg",
-      funFact: "The Lesedi La Rona diamond, found in 2015, was 1,109 carats (the size of a tennis ball) and sold for $53 million!"
     },
     {
       id: "diamond-rough-3",
@@ -72,7 +40,7 @@ export const gtaData = {
       inGameUse: "High-end jewelry store loot",
       realWorldUse: "Cut into brilliant gems, industrial tools",
       rarity: "Rare",
-      imageUrl: "/images/gta/diamond-rough-3.jpg",
+      imageUrl: "/TGMS2026/images/gta/diamond-rough-3.jpg",
       funFact: "The Hope Diamond (45.52 carats, deep blue) is valued at $250 million and supposedly cursed!"
     },
     {
@@ -88,7 +56,7 @@ export const gtaData = {
       inGameUse: "Represents diamond mining operations",
       realWorldUse: "Shows geological context of diamond formation, museum/educational specimens",
       rarity: "Rare",
-      imageUrl: "/images/gta/diamond-matrix.jpg",
+      imageUrl: "/TGMS2026/images/gta/diamond-matrix.jpg",
       funFact: "Kimberlite eruptions are so violent (faster than the speed of sound) they haven't occurred in recorded human history!"
     },
     {
@@ -104,7 +72,7 @@ export const gtaData = {
       inGameUse: "Jewelry store merchandise, luxury collectible",
       realWorldUse: "Precious gemstone, laser components (ruby lasers), watch bearings",
       rarity: "Rare",
-      imageUrl: "/images/gta/ruby-gem.jpg",
+      imageUrl: "/TGMS2026/images/gta/ruby-gem.jpg",
       funFact: "The Sunrise Ruby sold for $30 million in 2015, making it the most expensive ruby ever. Large, fine rubies are rarer than comparable diamonds!"
     },
     {
@@ -120,7 +88,7 @@ export const gtaData = {
       inGameUse: "High-value luxury item",
       realWorldUse: "Cut into gemstones, industrial applications, museum specimens",
       rarity: "Rare",
-      imageUrl: "/images/gta/ruby-mineral.jpg",
+      imageUrl: "/TGMS2026/images/gta/ruby-mineral.jpg",
       funFact: "Ancient Hindus called ruby 'ratnaraj' (king of precious stones) and believed it protected warriors in battle!"
     }
   ]
