@@ -75,26 +75,28 @@ function App() {
       )}
 
       {/* Hero Section */}
-      <div 
-        className="hero"
-        style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(/TGMS2026/images/${currentGameId}/banner.jpg)`,
-          backgroundSize: 'contain',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
-        <div className="hero-content">
-          <div style={{
-            background: 'rgba(255, 255, 255, 0.25)',
-            padding: '2rem',
-            borderRadius: '12px',
-            backdropFilter: 'blur(8px)'
-          }}>
-            <h1 className="game-logo">{gameInfo.name}</h1>
-            <p className="game-subtitle">{gameInfo.tagline}</p>
-          </div>
+      <div className="hero-section">
+        {/* Title and Tagline Above Banner */}
+        <div style={{
+          textAlign: 'center',
+          padding: '2rem 1rem 1rem',
+          background: 'var(--bg-primary)'
+        }}>
+          <h1 className="game-logo" style={{ marginBottom: '0.5rem' }}>{gameInfo.name}</h1>
+          <p className="game-subtitle" style={{ margin: 0 }}>{gameInfo.tagline}</p>
         </div>
+        
+        {/* Banner Image */}
+        <div 
+          className="hero"
+          style={{
+            backgroundImage: `url(/TGMS2026/images/${currentGameId}/banner.jpg)`,
+            backgroundSize: 'contain',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            minHeight: '300px'
+          }}
+        />
       </div>
 
       {/* Stats Grid */}
