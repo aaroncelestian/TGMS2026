@@ -3,6 +3,8 @@ import { MineralCard } from './components/MineralCard';
 import { MineralModal } from './components/MineralModal';
 import { Footer } from './components/Footer';
 import { About } from './components/About';
+import { UnEarthed } from './components/UnEarthed';
+import { Research } from './components/Research';
 import { allGames, gameList } from './data/index';
 import './styles/App.css';
 
@@ -11,6 +13,8 @@ function App() {
   const [viewMode, setViewMode] = useState('gallery');
   const [showGameMenu, setShowGameMenu] = useState(false);
   const [showAbout, setShowAbout] = useState(false);
+  const [showUnEarthed, setShowUnEarthed] = useState(false);
+  const [showResearch, setShowResearch] = useState(false);
 
   // Get game from URL parameter or default to minecraft
   const getInitialGame = () => {
@@ -53,20 +57,50 @@ function App() {
           </div>
           <span className="game-nav-arrow">{showGameMenu ? '▲' : '▼'}</span>
         </button>
-        <button 
-          onClick={() => setShowAbout(true)}
-          style={{
-            background: 'transparent',
-            border: 'none',
-            color: 'var(--accent)',
-            fontSize: '0.9rem',
-            cursor: 'pointer',
-            padding: '0.5rem 1rem',
-            fontWeight: '500'
-          }}
-        >
-          About
-        </button>
+        <div style={{ display: 'flex', gap: '0.5rem' }}>
+          <button 
+            onClick={() => setShowUnEarthed(true)}
+            style={{
+              background: 'transparent',
+              border: 'none',
+              color: 'var(--accent)',
+              fontSize: '0.9rem',
+              cursor: 'pointer',
+              padding: '0.5rem 1rem',
+              fontWeight: '500'
+            }}
+          >
+            UnEarthed
+          </button>
+          <button 
+            onClick={() => setShowResearch(true)}
+            style={{
+              background: 'transparent',
+              border: 'none',
+              color: 'var(--accent)',
+              fontSize: '0.9rem',
+              cursor: 'pointer',
+              padding: '0.5rem 1rem',
+              fontWeight: '500'
+            }}
+          >
+            Research
+          </button>
+          <button 
+            onClick={() => setShowAbout(true)}
+            style={{
+              background: 'transparent',
+              border: 'none',
+              color: 'var(--accent)',
+              fontSize: '0.9rem',
+              cursor: 'pointer',
+              padding: '0.5rem 1rem',
+              fontWeight: '500'
+            }}
+          >
+            About
+          </button>
+        </div>
       </div>
 
       {/* Game Menu Overlay */}
@@ -227,6 +261,16 @@ function App() {
       {/* About Modal */}
       {showAbout && (
         <About onClose={() => setShowAbout(false)} />
+      )}
+
+      {/* UnEarthed Modal */}
+      {showUnEarthed && (
+        <UnEarthed onClose={() => setShowUnEarthed(false)} />
+      )}
+
+      {/* Research Modal */}
+      {showResearch && (
+        <Research onClose={() => setShowResearch(false)} />
       )}
 
       {/* Footer */}
