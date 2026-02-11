@@ -5,6 +5,7 @@ import { Footer } from './components/Footer';
 import { About } from './components/About';
 import { UnEarthed } from './components/UnEarthed';
 import { Research } from './components/Research';
+import { Education } from './components/Education';
 import { allGames, gameList } from './data/index';
 import './styles/App.css';
 
@@ -15,6 +16,7 @@ function App() {
   const [showAbout, setShowAbout] = useState(false);
   const [showUnEarthed, setShowUnEarthed] = useState(false);
   const [showResearch, setShowResearch] = useState(false);
+  const [showEducation, setShowEducation] = useState(false);
 
   // Get game from URL parameter or default to minecraft
   const getInitialGame = () => {
@@ -57,7 +59,7 @@ function App() {
           </div>
           <span className="game-nav-arrow">{showGameMenu ? '▲' : '▼'}</span>
         </button>
-        <div style={{ display: 'flex', gap: '0.5rem' }}>
+        <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
           <button 
             onClick={() => setShowUnEarthed(true)}
             style={{
@@ -85,6 +87,20 @@ function App() {
             }}
           >
             Research
+          </button>
+          <button 
+            onClick={() => setShowEducation(true)}
+            style={{
+              background: 'transparent',
+              border: 'none',
+              color: 'var(--accent)',
+              fontSize: '0.9rem',
+              cursor: 'pointer',
+              padding: '0.5rem 1rem',
+              fontWeight: '500'
+            }}
+          >
+            Education
           </button>
           <button 
             onClick={() => setShowAbout(true)}
@@ -271,6 +287,11 @@ function App() {
       {/* Research Modal */}
       {showResearch && (
         <Research onClose={() => setShowResearch(false)} />
+      )}
+
+      {/* Education Modal */}
+      {showEducation && (
+        <Education onClose={() => setShowEducation(false)} />
       )}
 
       {/* Footer */}
