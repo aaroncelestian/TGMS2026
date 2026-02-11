@@ -5,8 +5,8 @@ export const returnToMoriaData = {
     tagline: "Dwarven mining adventure in the depths of Moria",
     developer: "Free Range Games",
     releaseYear: 2023,
-    totalMinerals: 20,
-    totalSpecimens: 6,
+    totalMinerals: 22,
+    totalSpecimens: 8,
     diversityScore: "High",
     gameDescription: "The Lord of the Rings: Return to Moria features 20 different ores and gems ranging from common Iron and Tin to the legendary Mithril. As dwarves reclaiming Moria, players mine deep into the mountain to gather resources for crafting weapons, armor, and rebuilding the ancient dwarven kingdom. Mining is the core gameplay loop, faithful to Tolkien's lore."
   },
@@ -112,6 +112,40 @@ export const returnToMoriaData = {
       locality: "N/A",
       imageUrl: "/TGMS2026/images/return-to-moria/citrine-mineral.jpg",
       funFact: "The largest faceted citrine in the world is the Malaga, weighing 20,200 carats (about 8.8 pounds)!"
+    },
+    {
+      id: "amethyst-gem",
+      name: "Amethyst",
+      formula: "SiO₂",
+      specimenId: "33446",
+      type: "gem",
+      crystalSystem: "Trigonal (Hexagonal)",
+      hardness: "7",
+      color: "Purple, violet",
+      description: "Purple variety of quartz, colored by iron and natural irradiation. The most valuable quartz variety. In Return to Moria, amethyst represents the precious gems hidden in the depths of the dwarven kingdom.",
+      inGameUse: "Valuable gem, crafting material, dwarven treasure",
+      realWorldUse: "Gemstone jewelry, February birthstone, meditation and decorative stones",
+      rarity: "Common",
+      locality: "N/A",
+      imageUrl: "/TGMS2026/images/returntomoria/amethyst-gem.jpg",
+      funFact: "The name 'amethyst' comes from Greek 'amethystos' meaning 'not intoxicated'—ancient Greeks believed it prevented drunkenness!"
+    },
+    {
+      id: "amethyst-mineral",
+      name: "Amethyst Cluster",
+      formula: "SiO₂",
+      specimenId: "55690",
+      type: "mineral",
+      crystalSystem: "Trigonal (Hexagonal)",
+      hardness: "7",
+      color: "Deep purple crystal points",
+      description: "Natural amethyst forming crystal clusters (geodes). These spectacular formations occur when quartz crystallizes in gas cavities within volcanic rocks. The deepest purple is most valuable.",
+      inGameUse: "Mining resource, decorative element, dwarven crystal formation",
+      realWorldUse: "Museum specimens, decorative geodes, large specimens for crystal collections",
+      rarity: "Common",
+      locality: "N/A",
+      imageUrl: "/TGMS2026/images/returntomoria/amethyst-mineral.jpg",
+      funFact: "The largest amethyst geode ever found weighs over 13,000 pounds and is displayed in Australia. If you heat amethyst, it turns yellow (citrine)!"
     }
   ]
 };

@@ -5,8 +5,8 @@ export const zeldaData = {
     tagline: "Nintendo's iconic adventure series",
     developer: "Nintendo",
     releaseYear: 1986,
-    totalMinerals: 9,
-    totalSpecimens: 3,
+    totalMinerals: 8,
+    totalSpecimens: 2,
     diversityScore: "Low",
     gameDescription: "In The Legend of Zelda series, particularly Breath of the Wild and Tears of the Kingdom, players gather 9 different minerals including Amber, Opal, Topaz, Ruby, Sapphire, Diamond, and various ores. These materials are used for upgrading armor, selling to merchants, and crafting jewelry that provides special effects and resistances."
   },
@@ -29,38 +29,21 @@ export const zeldaData = {
       funFact: "Opals can contain up to 20% water! In Breath of the Wild, opals are worth 60 rupees each."
     },
     {
-      id: "amethyst-gem",
-      name: "Amethyst",
-      formula: "SiO₂",
-      specimenId: "33446",
+      id: "amber",
+      name: "Amber",
+      formula: "C₁₀H₁₆O",
+      specimenId: "45860",
       type: "gem",
-      crystalSystem: "Trigonal (Hexagonal)",
-      hardness: "7",
-      color: "Purple, violet",
-      description: "Purple variety of quartz, colored by iron and natural irradiation. The most valuable quartz variety. In Zelda, amethyst is often a mid-tier valuable gemstone.",
-      inGameUse: "Valuable gem for selling (Skyward Sword, Breath of the Wild), armor upgrades",
-      realWorldUse: "Gemstone jewelry, February birthstone, meditation and decorative stones",
+      crystalSystem: "Amorphous (fossilized resin)",
+      hardness: "2-2.5",
+      color: "Yellow, orange, brown",
+      description: "Fossilized tree resin that has hardened over millions of years. Often contains preserved insects and plant material. In Zelda games, amber is a common valuable material found throughout Hyrule.",
+      inGameUse: "Valuable material for selling to merchants, armor upgrades, crafting (Breath of the Wild/Tears of the Kingdom)",
+      realWorldUse: "Gemstone jewelry, scientific study of ancient life, decorative objects",
       rarity: "Common",
       locality: "N/A",
-      imageUrl: "/TGMS2026/images/zelda/amethyst-gem.jpg",
-      funFact: "The name 'amethyst' comes from Greek 'amethystos' meaning 'not intoxicated'—ancient Greeks believed it prevented drunkenness!"
-    },
-    {
-      id: "amethyst-mineral",
-      name: "Amethyst Cluster",
-      formula: "SiO₂",
-      specimenId: "55690",
-      type: "mineral",
-      crystalSystem: "Trigonal (Hexagonal)",
-      hardness: "7",
-      color: "Deep purple crystal points",
-      description: "Natural amethyst forming crystal clusters (geodes). These spectacular formations occur when quartz crystallizes in gas cavities within volcanic rocks. The deepest purple is most valuable.",
-      inGameUse: "Mining resource, decorative element",
-      realWorldUse: "Museum specimens, decorative geodes, large specimens for crystal collections",
-      rarity: "Common",
-      locality: "N/A",
-      imageUrl: "/TGMS2026/images/zelda/amethyst-mineral.jpg",
-      funFact: "The largest amethyst geode ever found weighs over 13,000 pounds and is displayed in Australia. If you heat amethyst, it turns yellow (citrine)!"
+      imageUrl: "/TGMS2026/images/zelda/amber.jpg",
+      funFact: "Amber can be 20-130 million years old! In Breath of the Wild, amber is worth 30 rupees and is one of the most common gems found."
     }
   ]
 };
