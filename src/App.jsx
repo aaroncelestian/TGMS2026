@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { MineralCard } from './components/MineralCard';
 import { MineralModal } from './components/MineralModal';
+import { Footer } from './components/Footer';
+import { About } from './components/About';
 import { allGames, gameList } from './data/index';
 import './styles/App.css';
 
@@ -8,6 +10,7 @@ function App() {
   const [selectedMineral, setSelectedMineral] = useState(null);
   const [viewMode, setViewMode] = useState('gallery');
   const [showGameMenu, setShowGameMenu] = useState(false);
+  const [showAbout, setShowAbout] = useState(false);
 
   // Get game from URL parameter or default to minecraft
   const getInitialGame = () => {
@@ -49,6 +52,20 @@ function App() {
             </div>
           </div>
           <span className="game-nav-arrow">{showGameMenu ? '▲' : '▼'}</span>
+        </button>
+        <button 
+          onClick={() => setShowAbout(true)}
+          style={{
+            background: 'transparent',
+            border: 'none',
+            color: 'var(--accent)',
+            fontSize: '0.9rem',
+            cursor: 'pointer',
+            padding: '0.5rem 1rem',
+            fontWeight: '500'
+          }}
+        >
+          About
         </button>
       </div>
 
@@ -206,6 +223,14 @@ function App() {
           onClose={() => setSelectedMineral(null)}
         />
       )}
+
+      {/* About Modal */}
+      {showAbout && (
+        <About onClose={() => setShowAbout(false)} />
+      )}
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
